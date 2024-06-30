@@ -1,0 +1,288 @@
+version: "3.1"
+
+stories:
+  - story: Saludo y despedida
+    steps:
+      - intent: saludo
+      - action: utter_saludo
+      - intent: despedida
+      - action: utter_despedida
+
+  - story: Consulta de bienestar
+    steps:
+      - intent: que_tal
+      - action: utter_que_tal
+
+  - story: Expresión de malestar
+    steps:
+      - intent: mal
+      - action: utter_mal
+
+  - story: Sentirse bien
+    steps:
+      - intent: sentirse_bien
+      - action: utter_sentirse_bien
+
+  - story: Estado más o menos
+    steps:
+      - intent: mas_menos
+      - action: utter_mas_menos
+
+  - story: Apoyo en caso de ansiedad
+    steps:
+      - intent: apoyo_ansiedad
+      - action: utter_apoyo_ansiedad
+
+  - story: Apoyo en caso de depresión o tristeza
+    steps:
+      - intent: apoyo_depresion
+      - action: utter_apoyo_depresion
+      - intent: tristeza
+      - action: utter_apoyo_depresion
+
+  - story: Manejo del estrés
+    steps:
+      - intent: estres
+      - action: utter_estres
+
+  - story: Pedir ayuda
+    steps:
+      - intent: pedir_ayuda
+      - action: utter_pedir_ayuda
+
+  - story: Dar ayuda
+    steps:
+      - intent: ayuda
+      - action: utter_ayuda 
+  
+  - story: Hablar de terapia
+    steps:
+      - intent: terapia
+      - action: utter_terapia
+
+  - story: Hablar sobre ansiedad
+    steps:
+      - intent: ansiedad
+      - action: utter_ansiedad
+
+  - story: Agradecer y dar gratitud
+    steps: 
+      - intent: gratitud
+      - action: utter_gratitud
+  
+  - story: Ayudar ante una crisis emocional
+    steps: 
+      - intent: crisis_emocional
+      - action: utter_crisis_emocional
+
+  - story: Dialogar sobre el autocuidado
+    steps: 
+      - intent: autocuidado
+      - action: utter_autocuidado
+
+  - story: Consejos generales de salud mental
+    steps:
+      - intent: recomendaciones
+      - action: utter_recomendaciones
+      - intent: consejos_salud_mental
+      - action: utter_consejos_salud_mental
+
+
+  - story: Brindar un consejo importante y aleatorio
+    steps: 
+      - intent: consejo
+      - action: utter_consejo
+
+  - story: Brindar asesoria contra la tristeza
+    steps: 
+      - intent: tristeza
+      - action: utter_tristeza
+
+  - story: Ayudar a superar la depresion
+    steps: 
+      - intent: depresion
+      - action: utter_depresion
+
+  - story: Responder cuando todo esta bien 
+    steps: 
+      - intent: bien
+      - action: utter_bien
+
+  - story: Preguntar otra vez
+    steps: 
+      - intent: default
+      - action: utter_default
+  
+    
+
+  - story: Actividad física recomendada
+    steps:
+      - intent: actividad_fisica
+      - action: utter_actividad_fisica
+
+  - story: Meditación y mindfulness
+    steps:
+      - intent: meditacion
+      - action: utter_meditacion
+
+  - story: Alimentación saludable
+    steps:
+      - intent: alimentacion_saludable
+      - action: utter_alimentacion_saludable
+
+  - story: Mejorar el sueño
+    steps:
+      - intent: sueno
+      - action: utter_sueno
+
+  - story: Acceso a recursos
+    steps:
+      - intent: recursos
+      - action: utter_recursos
+
+  - story: Mejora de la autoestima
+    steps:
+      - intent: autoestima
+      - action: utter_autoestima
+
+  - story: Búsqueda de apoyo social
+    steps:
+      - intent: apoyo_social
+      - action: utter_apoyo_social
+
+  - story: Expresión de emoción
+    steps:
+      - intent: emocion
+      - action: utter_emocion
+
+ 
+
+  - story: Expresión de alivio
+    steps:
+      - intent: alivio
+      - action: utter_alivio
+
+  - story: Expresión de incertidumbre
+    steps:
+      - intent: incertidumbre
+      - action: utter_incertidumbre
+
+  - story: Preocupación expresada
+    steps:
+      - intent: preocupacion
+      - action: utter_preocupacion
+
+  - story: Sentimiento de paz
+    steps:
+      - intent: paz
+      - action: utter_paz
+
+  - story: Práctica de atención plena
+    steps:
+      - intent: atencion_plena
+      - action: utter_atencion_plena
+
+  - story: Ejercicios mentales
+    steps:
+      - intent: ejercicio_mental
+      - action: utter_ejercicio_mental
+
+  - story: Buscar equilibrio
+    steps:
+      - intent: equilibrio
+      - action: utter_equilibrio
+
+  - story: Responder a sentimientos deprimidos
+    steps:
+      - intent: apoyo_emocional
+      - action: utter_apoyo_emocional
+
+  - story: Necesidad de descanso
+    steps:
+      - intent: descanso
+      - action: utter_descanso
+
+  - story: Búsqueda de fuentes confiables
+    steps:
+      - intent: fuentes
+      - action: utter_fuentes
+
+  - story: Cambio de perspectiva
+    steps:
+      - intent: perspectiva
+      - action: utter_perspectiva
+
+  - story: Necesidad de validación
+    steps:
+      - intent: validacion
+      - action: utter_validacion
+
+  - story: Búsqueda de compañía
+    steps:
+      - intent: compania
+      - action: utter_compania
+
+  - story: Necesidad de respaldo emocional
+    steps:
+      - intent: respaldo
+      - action: utter_respaldo
+
+  - story: Trabajo en autoaprecio
+    steps:
+      - intent: autoaprecio
+      - action: utter_autoaprecio
+
+  - story: Mejora de resistencia emocional
+    steps:
+      - intent: resistencia
+      - action: utter_resistencia
+
+  - story: Necesidad de asistencia profesional
+    steps:
+      - intent: asistencia_profesional
+      - action: utter_asistencia_profesional
+
+  - story: Apoyo para la depresión
+    steps:
+      - intent: apoyo_depresion
+      - action: utter_apoyo_depresion
+
+  - story: Apoyo para la ansiedad
+    steps:
+      - intent: respaldo_ansiedad
+      - action: utter_respaldo_ansiedad
+
+  - story: Expresar agradecimiento
+    steps:
+      - intent: agradecimiento
+      - action: utter_agradecimiento
+
+  - story: Atención inmediata en crisis emocional
+    steps:
+      - intent: atencion_inmediata
+      - action: utter_atencion_inmediata
+
+  - story: Emergencia psicológica
+    steps:
+      - intent: emergencia_psicologica
+      - action: utter_emergencia_psicologica
+
+  - story: Expresión de autocompasión
+    steps:
+      - intent: autoaprecio
+      - action: utter_autoaprecio
+
+  - story: Búsqueda de compañía
+    steps:
+      - intent: compania
+      - action: utter_compania
+
+  - story: Buscar validación emocional
+    steps:
+      - intent: validacion
+      - action: utter_validacion
+
+  - story: Practicar el autocontrol
+    steps:
+      - intent: autocontrol
+      - action: utter_autocontrol

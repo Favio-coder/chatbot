@@ -1,0 +1,623 @@
+version: "3.1"
+
+intents:
+  - saludo
+  - despedida
+  - apoyo_ansiedad
+  - atencion_inmediata
+  - que_tal
+  - autocontrol 
+  - mal
+  - sentirse_bien
+  - mas_menos
+  - ansiedad
+  - depresion
+  - tristeza
+  - estres
+  - ayuda
+  - gratitud
+  - autocuidado
+  - cuidar_emociones
+  - pedir_ayuda
+  - recomendaciones
+  - comunicacion
+  - actividad_fisica
+  - meditacion
+  - alimentacion_saludable
+  - sueno
+  - recursos
+  - autoestima
+  - apoyo_social
+  - consejo_salud_mental
+  - emocion
+  - alivio
+  - incertidumbre
+  - preocupacion
+  - terapia
+  - paz
+  - atencion_plena
+  - ejercicio_mental
+  - equilibrio
+  - descanso
+  - fuentes
+  - bien
+  - perspectiva
+  - validacion
+  - compania
+  - respaldo
+  - autoaprecio
+  - resistencia
+  - asistencia_profesional
+  - consejos_salud_mental
+  - promocion
+  - apoyo_depresion
+  - respaldo_ansiedad
+  - agradecimiento
+  - crisis_emocional
+  - emergencia_psicologica
+  - consejo
+  - default
+  - apoyo_emocional
+
+responses:
+  utter_apoyo_emocional:
+    - text: "¿Cómo te sientes hoy? Estoy aquí para escucharte y apoyarte en todo lo que necesites."
+    - text: "¿En qué puedo ayudarte en este momento? Estoy aquí para ofrecerte mi apoyo."
+    - text: "Entiendo que pueden surgir momentos difíciles. ¿Cómo puedo hacer tu día un poco mejor?"
+    - text: "¿Hay algo que te preocupe? Puedes confiar en mí para encontrar juntos una solución."
+    - text: "Estoy aquí para ayudarte a manejar tus emociones. ¿Qué te gustaría hablar hoy?"
+    - text: "¿Necesitas hablar sobre cómo te sientes? Estoy aquí para brindarte apoyo emocional."
+
+  utter_ayuda:
+    - text: "¿En qué puedo ayudarte?"
+    - text: "Estoy aquí para ayudarte. ¿Qué necesitas saber?"
+    - text: "Estoy aquí para ayudarte. ¿En qué puedo asistirte hoy?"
+    - text: "¿Cómo puedo ayudarte? Puedo darte consejos, información o simplemente escucharte."
+    - text: "¿Necesitas alguna recomendación específica? Estoy aquí para brindarte apoyo."
+    - text: "¿Hay algo en particular que te preocupe? Puedo ofrecerte recursos y consejos para manejarlo."
+    - text: "Puedo ayudarte con temas como el estrés, la ansiedad, la depresión y más. ¿Qué necesitas?"
+
+  utter_equilibrio:
+    - text: "Buscar el equilibrio en la vida es importante. ¿Te gustaría explorar cómo lograrlo?"
+    - text: "El equilibrio puede mejorar tu bienestar general. ¿Te gustaría hablar sobre cómo encontrarlo?"
+    - text: "Hablemos sobre cómo puedes encontrar equilibrio en tu vida diaria."
+    - text: "Es bueno buscar el equilibrio. ¿Hay algo específico que te gustaría discutir al respecto?"
+    - text: "El equilibrio es clave para el bienestar. ¿Cómo puedo ayudarte a alcanzarlo?"
+    
+
+  utter_descanso:
+    - text: "El descanso es fundamental para el bienestar. ¿Necesitas consejos para mejorar tu descanso?"
+    - text: "Descansar adecuadamente es importante para recargar energías. ¿Cómo ha sido tu sueño últimamente?"
+    - text: "Tomarse un tiempo para descansar es crucial. ¿Cómo manejas tu rutina de descanso?"
+
+  utter_fuentes:
+    - text: "Las fuentes de apoyo pueden variar, desde amigos y familiares hasta profesionales especializados. ¿Con quién te sientes más cómodo hablando?"
+
+  utter_perspectiva:
+    - text: "Cambiar la perspectiva puede ayudarte a ver las cosas de manera diferente. ¿Te gustaría explorar nuevas formas de pensar?"
+    - text: A veces cambiar la perspectiva puede ayudar. ¿Necesitas hablar sobre algún problema desde otra óptica?
+    - text: Ver las cosas desde diferentes ángulos puede ser útil. ¿Te gustaría explorar otros puntos de vista?
+    - text: La perspectiva puede marcar la diferencia. ¿En qué situación te gustaría considerar otra perspectiva?
+
+  utter_validacion:
+    - text: "Es normal buscar validación. ¿Cómo te sientes acerca de tus logros recientes?"
+
+  utter_compania:
+    - text: "La compañía puede marcar la diferencia. ¿Te gustaría hablar más sobre cómo puedes conectarte con otros?"
+    - text: La compañía puede hacer una gran diferencia. ¿Quieres hablar sobre cómo te sientes en este momento?
+    - text: A veces solo tener compañía puede ayudar. ¿Te sientes solo en este momento?
+    - text: La compañía puede brindar apoyo. ¿En qué puedo acompañarte hoy?
+
+  utter_respaldo:
+    - text: "Sentirse respaldado es importante. ¿Hay algo específico en lo que necesitas apoyo ahora mismo?"
+    - text: El respaldo emocional es importante. ¿Cómo puedo apoyarte mejor?
+    - text: Contar con respaldo es esencial. ¿Hay algo específico en lo que necesitas apoyo?
+    - text: Asegurarte de tener respaldo es clave. ¿Cómo puedo ser de ayuda?
+
+  utter_autoaprecio:
+    - text: "El autoaprecio es fundamental para tu bienestar. ¿Cómo te sientes contigo mismo hoy?"
+    - text: "Valorarse a uno mismo es fundamental para la autoestima. ¿Cómo te sientes respecto a ti mismo?"
+    - text: "El autoaprecio es crucial para el bienestar. ¿Qué haces para fortalecer tu autoestima?"
+    - text: "Trabajar en el autoaprecio es importante. ¿Te gustaría hablar sobre estrategias para mejorar tu autoestima?"
+
+  utter_resistencia:
+    - text: "La resistencia es clave para superar los desafíos. ¿Cómo te estás enfrentando a las dificultades?"
+
+  utter_asistencia_profesional:
+    - text: "Buscar ayuda profesional puede ser una opción valiosa. ¿Te gustaría hablar sobre los recursos disponibles?"
+
+  utter_promocion:
+    - text: "¡Promover tu bienestar es crucial! ¿Qué te gustaría mejorar en tu vida?"
+
+  utter_respaldo_ansiedad:
+    - text: "El apoyo puede ayudar a manejar la ansiedad. ¿Cómo puedes cuidarte mejor?"
+
+  utter_agradecimiento:
+    - text: "La gratitud puede tener un gran impacto en tu bienestar. ¿Hay algo por lo que te sientes agradecido hoy?"
+
+  utter_gratitud:
+    - text: "Practicar la gratitud puede mejorar tu estado de ánimo. ¿Quieres compartir algo por lo que te sientes agradecido?"
+    - text: "¡Gracias por compartir eso!"
+    - text: "Me alegra que hayas compartido eso conmigo."
+    - text: "Aprecio tu sinceridad."
+    - text: "¡Gracias! Es importante hablar de esto."
+    - text: "Te agradezco por confiar en mí."
+    - text: "Gracias por permitirme ser parte de tu día."
+
+  utter_consejo:
+    - text: "Recibir consejos puede ser útil. ¿Te gustaría escuchar algunas sugerencias?"
+    - text: "Aquí tienes un consejo para manejar el estrés: Intenta practicar la respiración profunda durante 5 minutos cada día."
+    - text: "Para mejorar tu ánimo, considera hacer ejercicio regularmente. Incluso caminar puede hacer una gran diferencia."
+    - text: "Si estás sintiendo ansiedad, intenta escribir en un diario tus pensamientos y sentimientos. A menudo, esto puede ayudar a aclarar tu mente."
+    - text: "Para mejorar tu sueño, asegúrate de mantener una rutina regular de horarios para dormir y despertar."
+    - text: "Si estás sintiéndote abrumado, intenta practicar la atención plena o mindfulness. Enfocarte en el presente puede reducir el estrés."
+    - text: "Recuerda mantener una alimentación saludable para apoyar tu bienestar mental y físico."
+
+  utter_default:
+    - text: "Lo siento, no entendí. ¿Podrías reformular tu pregunta?"
+    - text: "No estoy seguro de entender. ¿Podrías darme más detalles?"
+    - text: "Parece que no comprendo completamente. ¿Podrías explicarme más?"
+
+
+  utter_ejercicio_mental:
+  - text: "Para ejercitar tu mente, puedes intentar resolver acertijos o rompecabezas."
+  - text: "Una buena práctica de ejercicio mental es aprender algo nuevo cada día."
+  - text: "La lectura de libros desafiantes es excelente para mantener la mente activa."
+  - text: "Los juegos de estrategia como el ajedrez son ideales para ejercitar el pensamiento."
+  - text: "La meditación guiada puede ayudarte a mejorar tu concentración y claridad mental."
+
+  utter_crisis_emocional:
+  - text: "Entiendo que estás pasando por una crisis emocional. Respira profundo y trata de mantenerte tranquilo. ¿Te gustaría hablar sobre lo que estás sintiendo?"
+  - text: "Las crisis emocionales pueden ser abrumadoras. Estoy aquí para escucharte y brindarte apoyo. ¿Cómo puedo ayudarte en este momento?"
+  - text: "En situaciones de crisis emocional, es importante buscar ayuda y hablar sobre lo que estás experimentando. ¿Te gustaría que buscáramos recursos de apoyo juntos?"
+  - text: "Reconozco que estás pasando por una situación difícil. Recuerda que no estás solo/a. ¿Hay algo específico que te gustaría compartir o discutir?"
+
+  utter_emergencia_psicologica:
+  - text: "En casos de emergencia psicológica, es crucial buscar ayuda profesional de inmediato. ¿Puedo asistirte en encontrar recursos cercanos?"
+  - text: "Entiendo que necesitas atención urgente. Vamos a buscar juntos recursos profesionales que puedan apoyarte."
+  - text: "La emergencia psicológica requiere atención especializada. ¿Cómo puedo ayudarte a conectarte con profesionales capacitados en tu área?"
+  - text: "Es importante abordar la emergencia psicológica con prontitud. ¿Te gustaría que buscáramos juntos opciones de asistencia inmediata?"
+
+  utter_atencion_inmediata:
+  - text: "Entiendo que necesitas atención inmediata. Vamos a buscar juntos las mejores opciones de apoyo disponible."
+  - text: "Estoy aquí para ayudarte con atención inmediata. ¿Cómo puedo asistirte ahora mismo?"
+  - text: "Si necesitas atención urgente, puedo ayudarte a contactar con servicios de apoyo cerca de ti. ¿Te gustaría que comenzáramos?"
+  - text: "La atención inmediata es crucial. ¿Puedo facilitarte recursos o contactar servicios de emergencia en tu área?"
+
+
+  utter_saludo:
+  - text: "Bienvenido"
+  - text: "Hola"
+  - text: "Saludos cordiales"
+  - text: "Buen día"
+  - text: "Hey, ¿Qué tal?"
+  - text: "¡Hola, qué gusto verte por aquí!"
+  - text: "¡Bienvenido! Espero que tengas un excelente día."
+  - text: "¡Saludos! ¿Cómo te encuentras hoy?"
+  - text: "¡Hola! Espero que estés teniendo un buen día."
+  - text: "¡Hola! Me alegra verte."
+
+  utter_despedida:
+  - text: "Adiós"
+  - text: "Un gusto lograr charlar contigo, nos vemos"
+  - text: "Espero haberte ayudado, no dejes de comunicarte"
+  - text: "Hasta luego, ¡que tengas un buen día!"
+  - text: "Nos vemos pronto, ¡cuídate!"
+  - text: "Adiós, espero que todo vaya bien."
+  - text: "¡Que tengas una excelente jornada!"
+  - text: "Espero que volvamos a hablar pronto, ¡hasta luego!"
+  - text: "Fue un placer charlar contigo, ¡hasta la próxima!"
+  - text: "Cuídate, ¡hasta la próxima vez!"
+  - text: "Espero haberte sido de ayuda. ¡Cuídate!"
+  - text: "Hasta luego. Si necesitas más ayuda, aquí estaré."
+  - text: "Nos vemos pronto. ¡Cuídate mucho!"
+  - text: "Adiós por ahora. ¡Cuídate!"
+  - text: "Fue un gusto ayudarte. ¡Hasta pronto!"
+  - text: "Que tengas un buen día. ¡Hasta la próxima!"
+  - text: "Adiós. Siempre estaré aquí si necesitas más apoyo."
+  - text: "Espero que tengas un buen día. ¡Hasta luego!"
+  - text: "Nos vemos. Estoy aquí para ti cuando me necesites."
+  - text: "Hasta pronto. ¡No dudes en volver si necesitas algo más!"
+
+  utter_que_tal:
+  - text: "Me gustaría saber cómo estás."
+  - text: "Y si me cuentas tu estado de ánimo."
+  - text: "¿Cómo te fue hoy?"
+  - text: "¿Cómo va todo por allá?"
+  - text: "¿Cómo te sientes en este momento?"
+  - text: "Espero que estés bien, ¿cómo te ha ido?"
+  - text: "Cuéntame, ¿cómo te sientes hoy?"
+  - text: "¿Todo bien por tu lado?"
+  - text: "Me interesa saber cómo has estado últimamente."
+  - text: "¿Qué tal ha sido tu día hasta ahora?"
+  - text: "¿Hay algo que te gustaría compartir sobre tu día?"
+
+  utter_mal:
+    - text: "No me gusta escuchar eso, ¿qué problema tienes?"
+    - text: "Lamento que estés pasando por esto, ¿quieres hablar al respecto?"
+    - text: "Lo siento, ¿hay algo en lo que pueda ayudarte?"
+    - text: "Qué pena escuchar eso, ¿cómo puedo ayudarte?"
+    - text: "Eso suena difícil, cuéntame más sobre lo que está pasando."
+    - text: "Lamento que te sientas así, ¿quieres contarme más sobre lo que sucede?"
+    - text: "Entiendo que no te sientas bien, ¿quieres hablar de ello?"
+    - text: "Me preocupa escucharlo, ¿qué te está molestando?"
+    - text: "Siento mucho que te sientas así, ¿cómo puedo apoyarte?"
+    - text: "Es difícil escuchar eso, ¿hay algo específico que te esté afectando?"
+
+  utter_bien:
+    - text: "Me alegro que todo esté bien, pero no te olvides de contarme lo que sea."
+    - text: "¡Qué bien que estés bien! Siempre estoy aquí para escucharte si necesitas algo."
+    - text: "Me alegra saber que todo va bien, cuéntame cualquier cosa que necesites."
+    - text: "¡Genial que todo esté bien! Si necesitas hablar, estoy aquí."
+    - text: "Es una alegría saber que todo va bien, recuerda que siempre puedes contar conmigo."
+    - text: "Me hace feliz saber que todo va bien, no dudes en contarme cualquier cosa."
+    - text: "Qué bueno que todo esté en orden, estoy aquí para lo que necesites."
+    - text: "Me alegra mucho escuchar eso, no olvides que siempre puedes contarme cualquier cosa."
+    - text: "¡Eso es genial! Si necesitas compartir algo más, aquí estoy."
+    - text: "Es bueno saber que todo va bien, cualquier cosa, no dudes en contarme."
+
+  utter_mas_menos:
+    - text: "Esa respuesta no me convence, ¿todo bien?"
+    - text: "Mmm, parece que hay algo más, ¿quieres hablar de ello?"
+    - text: "No estoy seguro de si estás bien, ¿quieres contarme más?"
+    - text: "Parece que algo te preocupa, ¿quieres decirme qué pasa?"
+    - text: "¿Hay algo que te esté molestando? Estoy aquí para escucharte."
+    - text: "Esa respuesta me suena a que algo no va bien, ¿quieres contarme?"
+    - text: "Me parece que algo no está del todo bien, ¿quieres compartirlo conmigo?"
+    - text: "No parece que estés del todo bien, ¿quieres hablar de lo que te preocupa?"
+    - text: "Parece que hay algo en tu mente, ¿quieres contármelo?"
+    - text: "¿Algo no está del todo bien? Estoy aquí para escuchar lo que necesites contarme."
+
+  utter_ansiedad:
+    - text: "Es común sentir ansiedad. Vamos a explorar algunas técnicas para calmarte juntos."
+    - text: "Tomar respiraciones profundas puede ayudar. ¿Te gustaría probar un ejercicio de relajación?"
+    - text: "Es común sentir ansiedad. Vamos a explorar algunas técnicas para calmarte juntos."
+    - text: "Tomar respiraciones profundas puede ayudar. ¿Te gustaría probar un ejercicio de relajación?"
+    - text: "Es normal sentir ansiedad. ¿Qué te parece si intentamos algunas técnicas de respiración?"
+    - text: "La ansiedad es una respuesta común al estrés. Podemos trabajar juntos para encontrar formas de aliviarla."
+    - text: "Intenta concentrarte en tu respiración por un momento. ¿Quieres que te guíe a través de un ejercicio?"
+    - text: "La ansiedad puede ser difícil, pero hay maneras de manejarla. ¿Quieres aprender algunas técnicas?"
+    - text: "Es normal sentirte así a veces. Podemos practicar algunas técnicas de relajación juntos."
+    - text: "Intenta enfocar tu atención en algo positivo. ¿Quieres que te sugiera algunas actividades?"
+    - text: "Respirar profundamente puede ayudar a reducir la ansiedad. ¿Te gustaría probarlo ahora?"
+    - text: "Entiendo que sientas ansiedad. ¿Te gustaría que te ayudara a encontrar maneras de relajarte?"
+    - text: "La ansiedad puede ser abrumadora, pero hay formas de manejarla. ¿Qué te parece si exploramos algunas juntas?"
+    - text: "Tomar un momento para respirar profundamente puede ser útil. ¿Te gustaría intentarlo conmigo?"
+    - text: "Es natural sentir ansiedad a veces. ¿Te gustaría hablar más sobre cómo te sientes?"
+    - text: "Cuando te sientas ansioso, intenta hacer una pausa y respirar. ¿Quieres que te ayude con un ejercicio?"
+    - text: "Es comprensible sentir ansiedad. Podemos probar algunas técnicas de meditación para calmarte."
+    - text: "La ansiedad es una respuesta natural, pero podemos trabajar en formas de reducirla. ¿Te gustaría saber cómo?"
+    - text: "A veces, hablar de lo que nos preocupa puede ayudar. ¿Te gustaría compartir más sobre lo que sientes?"
+    - text: "Respirar profundamente puede ser útil para calmar la ansiedad. ¿Quieres que te guíe en una sesión rápida?"
+    - text: "Enfocarse en la respiración puede ser muy útil. ¿Te gustaría hacer un ejercicio breve conmigo?"
+    - text: "Es normal tener momentos de ansiedad. ¿Te gustaría aprender algunas técnicas para relajarte?"
+  
+  utter_depresion:
+    - text: "Estoy aquí para escucharte. Hablemos sobre lo que te preocupa."
+    - text: "Entiendo que puedas estar pasando por un momento difícil. ¿Quieres contarme más sobre cómo te sientes?"
+    - text: "Es importante hablar de lo que te preocupa. Estoy aquí para escucharte."
+    - text: "Lamento que estés sintiendo esto. Estoy aquí para apoyarte en lo que necesites."
+    - text: "No estás solo en esto. Cuéntame más sobre lo que estás experimentando."
+    - text: "Es normal sentirte así a veces. Estoy aquí para escucharte sin juzgar."
+    - text: "La depresión puede ser difícil, pero hablar sobre ello puede ayudar. Estoy aquí para ti."
+    - text: "Es natural sentirse abrumado a veces. Cuéntame más sobre lo que te preocupa."
+    - text: "Entiendo que puede ser difícil. Estoy aquí para escucharte y ayudarte en lo que pueda."
+    - text: "Es importante expresar tus sentimientos. Estoy aquí para escucharte y apoyarte."
+    - text: "Sé que la depresión puede ser complicada. ¿Te gustaría hablar más sobre ello?"
+    - text: "Estoy aquí para ti, sin importar lo que estés sintiendo. Hablemos si te parece bien."
+    - text: "La depresión puede hacer que todo parezca más difícil. Estoy aquí para escuchar y ayudarte."
+    - text: "Es importante no guardarse los sentimientos. Estoy aquí para escucharte y ayudarte."
+    - text: "Entiendo que puedas sentirte así. Estoy aquí para apoyarte en lo que necesites."
+    - text: "Hablar sobre tus sentimientos puede ser un primer paso. Estoy aquí para escucharte."
+    - text: "La depresión puede ser muy pesada. Cuéntame más para ver cómo puedo ayudarte."
+    - text: "Es difícil enfrentar esto solo. Estoy aquí para escucharte y ayudarte en lo que necesites."
+    - text: "A veces, hablar de lo que sentimos puede hacer una gran diferencia. Estoy aquí para escucharte."
+    - text: "Es normal sentirse así a veces. Estoy aquí para escuchar y apoyarte sin juzgar."
+    - text: "La depresión puede ser muy dura. Estoy aquí para escuchar y ayudarte en lo que necesites."
+    - text: "Sé que puedes estar pasando por un momento difícil. Estoy aquí para ti."
+    - text: "Hablar de tus sentimientos puede ser el primer paso hacia sentirte mejor. Estoy aquí para escucharte."
+    - text: "Es natural sentirse así a veces. Hablemos sobre lo que te preocupa y cómo puedo ayudarte."
+    - text: "Estoy aquí para apoyarte sin importar lo que estés sintiendo. Cuéntame más sobre lo que te preocupa."
+
+  utter_tristeza:
+    - text: "Es normal sentirse triste a veces. Estoy aquí para escucharte si quieres hablar."
+    - text: "La tristeza es una emoción natural. ¿Quieres contarme más sobre lo que te hace sentir así?"
+    - text: "Lamento que te sientas así. Estoy aquí para escucharte y ayudarte en lo que necesites."
+    - text: "Es importante no guardarse los sentimientos. Estoy aquí para escucharte sin juzgar."
+    - text: "Sé que es difícil. Estoy aquí para apoyarte. ¿Te gustaría hablar más sobre ello?"
+    - text: "La tristeza puede ser pesada, pero hablar sobre ello puede ayudar. ¿Te gustaría compartir más?"
+
+  utter_estres:
+    - text: "El estrés es una respuesta común al exceso de presión. ¿Te gustaría aprender técnicas para manejarlo?"
+    - text: "El estrés puede afectar mucho. Podemos explorar formas de reducirlo. ¿Te gustaría que te ayudara?"
+    - text: "Es normal sentir estrés en momentos difíciles. Estoy aquí para apoyarte y ayudarte a manejarlo."
+    - text: "Entiendo que el estrés puede ser abrumador. ¿Te gustaría que te sugiriera algunas técnicas para reducirlo?"
+    - text: "El estrés puede hacer que todo se sienta más pesado. Hablemos sobre cómo podemos manejarlo juntos."
+
+  utter_autocuidado:
+    - text: "El autocuidado es esencial para tu bienestar. ¿Qué actividades disfrutas hacer para cuidarte a ti mismo?"
+    - text: "Cuidarte a ti mismo es muy importante. ¿Te gustaría hablar sobre algunas formas de autocuidado?"
+    - text: "El autocuidado puede hacer una gran diferencia. ¿Te gustaría explorar algunas técnicas juntos?"
+    - text: "Es fundamental encontrar tiempo para el autocuidado. Hablemos sobre lo que puedes hacer para sentirte mejor."
+    - text: "Practicar el autocuidado puede mejorar tu bienestar. ¿Te gustaría aprender más sobre ello?"
+
+  utter_pedir_ayuda:
+    - text: "Pedir ayuda es un paso valiente. ¿Hay algo específico en lo que pueda ayudarte?"
+    - text: "Es importante pedir ayuda cuando la necesitas. Estoy aquí para apoyarte en lo que necesites."
+    - text: "No estás solo. Pedir ayuda es un primer paso importante. ¿Cómo puedo ayudarte hoy?"
+    - text: "Buscar ayuda es crucial. Hablemos sobre cómo puedo apoyarte o dónde puedes encontrar ayuda adicional."
+    - text: "Pedir ayuda muestra fortaleza. Estoy aquí para escucharte y apoyarte en lo que necesites."
+  
+  utter_recomendaciones:
+    - text: "Te recomendaría practicar la respiración profunda y meditación para reducir el estrés y la ansiedad."
+    - text: "La actividad física puede ayudar a mejorar tu estado de ánimo. ¿Te gustaría explorar algunas opciones?"
+    - text: "Hablar con un profesional puede ser muy beneficioso. ¿Te gustaría que te ayude a encontrar uno?"
+    - text: "Mantener una rutina de sueño adecuada puede mejorar tu bienestar. ¿Te gustaría saber más?"
+    - text: "Participar en actividades que disfrutes puede ser muy útil. ¿Qué te gusta hacer en tu tiempo libre?"
+
+  utter_comunicacion:
+    - text: "Hablar sobre tus sentimientos puede ser muy liberador. Estoy aquí para escucharte."
+    - text: "Expresar tus emociones puede ayudar a aliviar la carga. ¿Te gustaría compartir más?"
+    - text: "La comunicación abierta es clave para el bienestar emocional. ¿Te gustaría hablar sobre lo que sientes?"
+    - text: "Hablar con alguien de confianza puede ayudarte a sentirte mejor. ¿Te gustaría compartir más sobre tu situación?"
+    - text: "A veces, simplemente hablar puede hacer una gran diferencia. Estoy aquí para escucharte."
+
+  utter_actividad_fisica:
+    - text: "La actividad física regular puede ayudar a mejorar tu estado de ánimo. ¿Qué te gusta hacer para mantenerte activo?"
+    - text: "El ejercicio puede ser una gran forma de liberar estrés. ¿Te gustaría que te sugiera algunas actividades?"
+    - text: "Mantenerse activo es importante para la salud mental. ¿Te gustaría explorar opciones para estar más activo?"
+    - text: "Hacer ejercicio puede mejorar tu bienestar general. ¿Qué actividades disfrutas hacer?"
+    - text: "La actividad física puede ser una excelente forma de mejorar tu estado de ánimo. ¿Qué te gustaría intentar?"
+
+  utter_meditacion:
+    - text: "La meditación puede ser muy útil para reducir el estrés. ¿Te gustaría aprender algunas técnicas?"
+    - text: "Practicar la meditación regularmente puede mejorar tu bienestar. ¿Te gustaría saber más?"
+    - text: "La meditación es una excelente herramienta para manejar la ansiedad. ¿Te gustaría hacer una sesión juntos?"
+    - text: "La meditación puede ayudarte a relajarte y centrarte. ¿Te gustaría probar algunas técnicas?"
+    - text: "Explorar la meditación puede ser beneficioso para tu salud mental. ¿Te gustaría saber cómo empezar?"
+
+  utter_alimentacion_saludable:
+    - text: "Mantener una alimentación equilibrada es importante para la salud mental. ¿Te gustaría hablar sobre esto?"
+    - text: "Una dieta saludable puede influir positivamente en tu bienestar. ¿Te gustaría que exploremos más sobre ello?"
+    - text: "Comer bien puede hacer una gran diferencia en cómo te sientes. ¿Quieres que te sugiera algunas opciones saludables?"
+    - text: "La alimentación equilibrada puede mejorar tu estado de ánimo. ¿Te gustaría saber más sobre este tema?"
+    - text: "Hablar sobre una dieta saludable puede ser beneficioso. ¿Te gustaría recibir algunos consejos?"
+
+  utter_sueno:
+    - text: "Dormir bien es clave para la salud mental. ¿Estás teniendo problemas para dormir?"
+    - text: "El sueño adecuado puede mejorar significativamente tu bienestar. ¿Te gustaría hablar sobre tus hábitos de sueño?"
+    - text: "Mantener una rutina de sueño regular es importante. ¿Quieres que te sugiera algunas formas de mejorar tu sueño?"
+    - text: "El sueño de calidad es crucial para la salud mental. ¿Te gustaría explorar formas de mejorar tu descanso?"
+    - text: "Hablar sobre tus hábitos de sueño puede ser útil. ¿Te gustaría compartir más sobre ello?"
+
+  utter_recursos:
+    - text: "Puedo proporcionarte información sobre recursos de salud mental. ¿Qué tipo de ayuda estás buscando?"
+    - text: "Hay muchos recursos disponibles para apoyar tu salud mental. ¿Te gustaría que te recomiende algunos?"
+    - text: "Conocer los recursos adecuados puede ser útil. ¿Qué tipo de información necesitas?"
+    - text: "Hay muchos recursos que pueden ayudarte. ¿Te gustaría que te oriente sobre dónde encontrarlos?"
+    - text: "Explorar los recursos disponibles puede ser beneficioso. ¿Te gustaría saber más sobre esto?"
+  
+  utter_autoestima:
+    - text: "Trabajar en tu autoestima es importante para tu bienestar. ¿Te gustaría hablar sobre esto?"
+    - text: "La autoestima afecta cómo nos sentimos cada día. ¿Te gustaría explorar formas de mejorarla?"
+    - text: "Mantener una buena autoestima es crucial. ¿Quieres que te sugiera algunas estrategias para fortalecerla?"
+    - text: "Fortalecer la autoestima puede mejorar tu calidad de vida. ¿Te gustaría recibir algunos consejos?"
+    - text: "Hablar sobre tu autoestima puede ser un buen primer paso. ¿Te gustaría compartir cómo te sientes?"
+
+  utter_apoyo_social:
+    - text: "El apoyo social es importante para la salud mental. ¿Tienes a alguien con quien hablar?"
+    - text: "Tener una red de apoyo puede ser muy beneficioso. ¿Te gustaría hablar sobre tus relaciones?"
+    - text: "Mantener conexiones sociales es crucial para tu bienestar. ¿Te gustaría explorar cómo fortalecerlas?"
+    - text: "El apoyo de otros puede hacer una gran diferencia. ¿Quieres que hablemos sobre cómo buscar más apoyo?"
+    - text: "Hablar con alguien de confianza puede ser muy útil. ¿Te gustaría que te sugiera formas de fortalecer tu red de apoyo?"
+
+  utter_cuidar_emociones:
+    - text: "Es importante cuidar de tus emociones. ¿Te gustaría hablar sobre lo que estás sintiendo?"
+    - text: "Gestionar tus emociones puede mejorar tu bienestar. ¿Te gustaría aprender algunas técnicas?"
+    - text: "Cuidar de tus emociones es crucial. ¿Te gustaría hablar sobre cómo te sientes?"
+    - text: "Trabajar en la gestión emocional puede ser muy beneficioso. ¿Te gustaría explorar cómo hacerlo?"
+    - text: "Es importante no ignorar tus emociones. Hablemos sobre cómo te sientes y cómo manejarlo mejor."
+
+  utter_autocontrol:
+    - text: "Desarrollar el autocontrol puede ayudarte a manejar mejor las situaciones difíciles. ¿Te gustaría saber cómo?"
+    - text: "El autocontrol es una habilidad importante para la salud mental. ¿Quieres aprender más sobre cómo fortalecerlo?"
+    - text: "Trabajar en el autocontrol puede mejorar tu calidad de vida. ¿Te gustaría que te sugiera algunas estrategias?"
+    - text: "Desarrollar un buen autocontrol puede ser muy beneficioso. ¿Te gustaría recibir algunos consejos sobre esto?"
+    - text: "Hablar sobre el autocontrol puede ser útil. ¿Te gustaría compartir más sobre cómo te manejas en situaciones difíciles?"
+
+  utter_terapia:
+    - text: "La terapia puede ser una herramienta muy útil. ¿Te gustaría saber más sobre cómo puede ayudarte?"
+    - text: "Explorar la opción de la terapia puede ser beneficioso. ¿Te gustaría que te explique más?"
+    - text: "La terapia puede proporcionar un gran apoyo. ¿Te gustaría hablar sobre cómo encontrar un terapeuta?"
+    - text: "Buscar terapia puede ser un buen paso hacia tu bienestar. ¿Te gustaría recibir más información al respecto?"
+    - text: "Hablar sobre la opción de la terapia puede ser útil. ¿Te gustaría explorar cómo podría ayudarte?"
+
+  utter_consejos_salud_mental:
+  - text: "Cuidar de tu salud mental es importante. Asegúrate de tomarte tiempo para ti mismo todos los días."
+  - text: "Mantén una rutina diaria saludable que incluya ejercicio físico, descanso adecuado y alimentación balanceada."
+  - text: "Hablar con amigos cercanos o familiares puede proporcionarte apoyo emocional valioso."
+  - text: "Considera practicar técnicas de relajación como la meditación o la respiración profunda para reducir el estrés."
+  - text: "Buscar ayuda profesional, como la terapia, puede ser un paso positivo hacia tu bienestar."
+  - text: "No tengas miedo de pedir ayuda si sientes que estás luchando. Hay recursos y personas dispuestas a apoyarte."
+
+  utter_apoyo_depresion:
+  - text: "La depresión puede ser abrumadora, pero no estás solo en esto. Es importante buscar apoyo emocional y profesional. Considera hablar con un terapeuta o psicólogo para recibir orientación personalizada. También es fundamental mantener una rutina de autocuidado, como hacer ejercicio, mantener una dieta equilibrada y dedicar tiempo a actividades que disfrutes. Recuerda que cada paso que das hacia tu bienestar cuenta, y hay recursos disponibles para ayudarte en este proceso."
+
+  utter_apoyo_ansiedad:
+  - text: "La ansiedad puede ser desafiante, pero no estás solo/a. Buscar apoyo emocional y profesional es fundamental."
+  - text: "Considera hablar con un terapeuta o psicólogo para explorar estrategias que te ayuden a manejar tus preocupaciones diarias."
+  - text: "Practicar técnicas de respiración profunda, meditación o ejercicios de relajación puede ser útil para reducir los síntomas de ansiedad."
+  - text: "Recuerda que buscar ayuda es un signo de fortaleza y hay recursos disponibles para apoyarte en este camino hacia el bienestar."
+  - text: "Establecer una rutina diaria que incluya actividades que disfrutes y que te ayuden a relajarte puede marcar una gran diferencia."
+  - text: "Mantener un diario donde anotes tus pensamientos y emociones te ayudará a identificar patrones que desencadenan tu ansiedad."
+  - text: "Una dieta balanceada y ejercicio regular pueden tener un impacto positivo en tu estado de ánimo y en cómo tu cuerpo maneja el estrés."
+  - text: "Si te sientes abrumado/a, no dudes en buscar ayuda de inmediato. Existen líneas de apoyo y recursos especializados que están disponibles para asistirte."
+  - text: "Tomarse tiempo para ti mismo/a, ya sea para descansar, disfrutar de un hobby o simplemente para desconectarte un momento de las preocupaciones diarias, es esencial."
+  - text: "La ansiedad es algo con lo que se puede trabajar y mejorar con el tiempo y con el apoyo adecuado. ¡No te rindas!"
+  - text: "Recuerda que cada paso hacia el bienestar cuenta, y estás haciendo lo mejor que puedes en este momento. ¡Sigue adelante!"
+
+
+  
+
+
+
+ 
+
+
+  utter_emocion:
+    - text: "¿Qué emoción estás experimentando en este momento?"
+    - text: "Hablemos sobre la emoción que estás sintiendo."
+    - text: "Entiendo que estás sintiendo una emoción intensa. ¿Te gustaría hablar más sobre ello?"
+    - text: "¿Cómo estás lidiando con tus emociones en este momento?"
+    - text: "Las emociones son parte natural de la vida. ¿Quieres explorar cómo te sientes?"
+
+  utter_sentirse_bien:
+    - text: "Me alegra escuchar que te sientes bien. ¿Hay algo específico que te gustaría compartir?"
+    - text: "Qué bien que te sientas así. ¿Quieres hablar de algo en particular?"
+    - text: "Es bueno saber que estás bien. ¿Qué te ha llevado a sentirte así?"
+    - text: "Me alegra escuchar eso. ¿Hay algo más en lo que pueda ayudarte?"
+    - text: "Es genial que te sientas bien. ¿Quieres hablar de algo en particular?"
+
+  
+
+  utter_alivio:
+    - text: "Espero que te sientas aliviado/a. ¿Puedo ayudarte en algo más?"
+    - text: "Me alegra escuchar que te sientas aliviado/a. ¿Hay algo más en lo que pueda asistirte?"
+    - text: "Qué bueno que sientas alivio. ¿Te gustaría hablar de algo en particular?"
+    - text: "Es genial que te sientas así. ¿Quieres explorar más sobre lo que te está haciendo sentir aliviado/a?"
+    - text: "Me alegra saber que te sientes aliviado/a. ¿Puedo hacer algo más por ti?"
+
+  utter_incertidumbre:
+    - text: "La incertidumbre puede ser difícil. ¿Te gustaría hablar sobre cómo manejarla?"
+    - text: "Entiendo que la incertidumbre pueda ser abrumadora. ¿Cómo te sientes al respecto?"
+    - text: "La incertidumbre es parte de la vida. ¿Quieres explorar estrategias para lidiar con ella?"
+    - text: "Es normal sentir incertidumbre. ¿Puedo ayudarte a encontrar formas de manejarla?"
+    - text: "Hablemos sobre cómo puedes lidiar con la incertidumbre que estás experimentando."
+
+  utter_preocupacion:
+    - text: "Es natural preocuparse. ¿Te gustaría hablar sobre tus preocupaciones?"
+    - text: "La preocupación puede ser agotadora. ¿Te gustaría compartir más sobre lo que te preocupa?"
+    - text: "Entiendo que te sientas preocupado/a. ¿Cómo estás lidiando con estas preocupaciones?"
+    - text: "Hablemos sobre cómo puedes manejar las preocupaciones que tienes."
+    - text: "La preocupación es común. ¿Puedo ayudarte a encontrar formas de aliviarla?"
+
+  utter_paz:
+    - text: "Buscar la paz interior es importante. ¿Te gustaría explorar formas de encontrarla?"
+    - text: "La paz interior puede ser revitalizante. ¿Te gustaría hablar sobre cómo alcanzarla?"
+    - text: "Hablemos sobre cómo puedes encontrar paz en tu vida diaria."
+    - text: "Es bueno buscar la paz. ¿Hay algo específico que te gustaría discutir al respecto?"
+    - text: "La paz es fundamental para el bienestar. ¿Cómo puedo ayudarte a encontrarla?"
+
+  utter_atencion_plena:
+    - text: "La atención plena puede ayudarte a centrarte en el momento presente. ¿Te gustaría aprender más sobre ello?"
+    - text: "La atención plena puede ser útil para reducir el estrés. ¿Te gustaría practicarla juntos?"
+    - text: "Practicar la atención plena puede mejorar tu bienestar. ¿Te gustaría saber cómo empezar?"
+    - text: "La atención plena puede ser transformadora. ¿Te gustaría explorar técnicas para integrarla en tu vida?"
+    - text: "Hablar sobre la atención plena puede ser beneficioso. ¿Te gustaría saber más al respecto?"
+
+utter_ejercicio_mental:
+    - text: "Mantener tu mente activa es importante para la salud mental. ¿Te gustaría hablar sobre ejercicios mentales?"
+    - text: "El ejercicio mental puede mejorar tu agilidad cognitiva. ¿Te gustaría aprender algunas técnicas?"
+    - text: "Es bueno ejercitar la mente. ¿Te gustaría explorar formas de hacerlo?"
+    - text: "El ejercicio mental puede fortalecer tu mente. ¿Te gustaría practicar algunos ejercicios juntos?"
+    - text: "Hablar sobre ejercicios mentales puede ser útil. ¿Te gustaría saber más?"
+
+utter_equilibrio:
+    - text: "Buscar el equilibrio en la vida es importante. ¿Te gustaría explorar cómo lograrlo?"
+    - text: "El equilibrio puede mejorar tu bienestar general. ¿Te gustaría hablar sobre cómo encontrarlo?"
+    - text: "Hablemos sobre cómo puedes encontrar equilibrio en tu vida diaria."
+    - text: "Es bueno buscar el equilibrio. ¿Hay algo específico que te gustaría discutir al respecto?"
+    - text: "El equilibrio es clave para el bienestar. ¿Cómo puedo ayudarte a alcanzarlo?"
+
+
+utter_descanso:
+  - text: El descanso es fundamental para el bienestar. ¿Necesitas consejos para mejorar tu descanso?
+  - text: Descansar adecuadamente es importante para recargar energías. ¿Cómo ha sido tu sueño últimamente?
+  - text: Tomarse un tiempo para descansar es crucial. ¿Cómo manejas tu rutina de descanso?
+
+utter_fuentes:
+  - text: Buscar fuentes confiables es clave. ¿En qué tema específico necesitas información?
+  - text: Es importante consultar fuentes confiables. ¿Qué tipo de información estás buscando?
+  - text: Asegurarse de tener fuentes precisas es esencial. ¿Puedo ayudarte a encontrar información en particular?
+
+utter_perspectiva:
+  - text: A veces cambiar la perspectiva puede ayudar. ¿Necesitas hablar sobre algún problema desde otra óptica?
+  - text: Ver las cosas desde diferentes ángulos puede ser útil. ¿Te gustaría explorar otros puntos de vista?
+  - text: La perspectiva puede marcar la diferencia. ¿En qué situación te gustaría considerar otra perspectiva?
+
+utter_validacion:
+  - text: Es importante sentirse validado. ¿Te gustaría hablar sobre tus emociones?
+  - text: La validación emocional es crucial. ¿Cómo te sientes al respecto?
+  - text: Sentirse validado es fundamental para la salud mental. ¿Cómo puedo apoyarte en este aspecto?
+
+utter_compania:
+  - text: La compañía puede hacer una gran diferencia. ¿Quieres hablar sobre cómo te sientes en este momento?
+  - text: A veces solo tener compañía puede ayudar. ¿Te sientes solo en este momento?
+  - text: La compañía puede brindar apoyo. ¿En qué puedo acompañarte hoy?
+
+utter_respaldo:
+  - text: El respaldo emocional es importante. ¿Cómo puedo apoyarte mejor?
+  - text: Contar con respaldo es esencial. ¿Hay algo específico en lo que necesitas apoyo?
+  - text: Asegurarte de tener respaldo es clave. ¿Cómo puedo ser de ayuda?
+
+utter_autoaprecio:
+  - text: "Valorarse a uno mismo es fundamental para la autoestima. ¿Cómo te sientes respecto a ti mismo?"
+  - text: "El autoaprecio es crucial para el bienestar. ¿Qué haces para fortalecer tu autoestima?"
+  - text: "Trabajar en el autoaprecio es importante. ¿Te gustaría hablar sobre estrategias para mejorar tu autoestima?"
+
+utter_resistencia:
+  - text: La resistencia emocional es clave para superar desafíos. ¿Cómo manejas situaciones difíciles?
+  - text: Desarrollar resistencia es importante para la resiliencia. ¿En qué áreas te gustaría fortalecer tu resistencia?
+  - text: La resistencia es fundamental en tiempos difíciles. ¿Te gustaría hablar sobre cómo puedes mejorarla?
+
+utter_asistencia_profesional:
+  - text: Buscar ayuda profesional puede marcar la diferencia. ¿Estás considerando consultar a un profesional?
+  - text: La asistencia profesional puede proporcionar herramientas adicionales. ¿Cómo te sientes respecto a buscar ayuda?
+
+
+
+utter_promocion:
+  - text: "Promover el bienestar es fundamental. ¿Cómo promueves tu propio bienestar?"
+  - text: "La promoción de la salud mental es importante. ¿Qué haces para mantener tu bienestar?"
+  - text: "Promover el bienestar es una acción positiva. ¿Te gustaría explorar estrategias para hacerlo?"
+
+
+
+utter_respaldo_ansiedad:
+    - text: "Contar con respaldo es esencial cuando se enfrenta ansiedad. ¿Cómo puedo ayudarte a sentirte más apoyado?"
+    - text: "El respaldo emocional puede ser de gran ayuda para manejar la ansiedad. ¿Hay algo específico en lo que necesites apoyo?"
+
+
+
+utter_gratitud:
+    - text: "¡Gracias por compartir eso!"
+    - text: "Me alegra que hayas compartido eso conmigo."
+    - text: "Aprecio tu sinceridad."
+    - text: "¡Gracias! Es importante hablar de esto."
+    - text: "Te agradezco por confiar en mí."
+    - text: "Gracias por permitirme ser parte de tu día."
+
+utter_ayuda:
+  - text: "Estoy aquí para ayudarte. ¿En qué puedo asistirte hoy?"
+  - text: "¿Cómo puedo ayudarte? Puedo darte consejos, información o simplemente escucharte."
+  - text: "¿Necesitas alguna recomendación específica? Estoy aquí para brindarte apoyo."
+  - text: "¿Hay algo en particular que te preocupe? Puedo ofrecerte recursos y consejos para manejarlo."
+  - text: "Puedo ayudarte con temas como el estrés, la ansiedad, la depresión y más. ¿Qué necesitas?"
+  
+utter_agradecimiento:
+    - text: "Gracias por su respuesta"
+    - text: "Gracias a ti por tu cooperación"
+    - text: "La gratitud puede tener un gran impacto en tu bienestar. ¿Hay algo por lo que te sientes agradecido hoy?"
+  
+utter_consejo:
+    - text: "Aquí tienes un consejo para manejar el estrés: Intenta practicar la respiración profunda durante 5 minutos cada día."
+    - text: "Para mejorar tu ánimo, considera hacer ejercicio regularmente. Incluso caminar puede hacer una gran diferencia."
+    - text: "Si estás sintiendo ansiedad, intenta escribir en un diario tus pensamientos y sentimientos. A menudo, esto puede ayudar a aclarar tu mente."
+    - text: "Para mejorar tu sueño, asegúrate de mantener una rutina regular de horarios para dormir y despertar."
+    - text: "Si estás sintiéndote abrumado, intenta practicar la atención plena o mindfulness. Enfocarte en el presente puede reducir el estrés."
+    - text: "Recuerda mantener una alimentación saludable para apoyar tu bienestar mental y físico."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

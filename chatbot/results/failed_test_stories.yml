@@ -1,0 +1,60 @@
+version: "3.1"
+stories:
+- story: Saludo y petición de ayuda (.\tests\test_stories.yml)
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2  # predicted: utter_saludo
+  - intent: ayuda
+  - action: utter_ayuda
+- story: Saludo y expresión de gratitud (.\tests\test_stories.yml)
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2  # predicted: utter_saludo
+  - intent: gratitud
+  - action: utter_gratitud
+- story: Saludo y pregunta sobre el estrés (.\tests\test_stories.yml)
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2  # predicted: utter_saludo
+  - intent: que_tal
+  - action: utter_que_tal
+  - intent: estres
+  - action: utter_estres
+- story: Saludo y expresión de estrés (.\tests\test_stories.yml)
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2  # predicted: utter_saludo
+  - intent: estres
+  - action: utter_estres
+  - intent: agradecimiento
+  - action: utter_agradecimiento
+- story: Saludo y pregunta sobre el estado (.\tests\test_stories.yml)
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2  # predicted: utter_saludo
+  - intent: que_tal
+  - action: utter_que_tal
+- story: Saludo y solicitud de consejo (.\tests\test_stories.yml)
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2  # predicted: utter_saludo
+  - intent: consejo
+  - action: utter_consejo
+- story: Saludo y expresión de estrés (.\tests\test_stories.yml)
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2  # predicted: utter_saludo
+  - intent: estres
+  - action: utter_estres
+- story: Expresión de estrés y saludo (.\tests\test_stories.yml)
+  steps:
+  - intent: estres
+  - action: utter_estres
+  - intent: saludo
+  - action: utter_saludo_v2  # predicted: utter_saludo
+- story: Saludo y despedida (.\tests\test_stories.yml)
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2  # predicted: utter_saludo
+  - intent: despedida
+  - action: utter_despedida

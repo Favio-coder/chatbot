@@ -1,0 +1,48 @@
+# The config recipe.
+recipe: default.v1
+
+assistant_id: 20240624-082748-oily-director
+
+language: es
+
+pipeline:
+  - name: SpacyNLP
+    model: "es_core_news_md"
+
+  - name: SpacyTokenizer
+
+  - name: SpacyFeaturizer
+
+  - name: RegexFeaturizer
+
+  - name: LexicalSyntacticFeaturizer
+
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+
+  - name: LanguageModelFeaturizer
+    model_name: "bert"
+    model_weights: "bert-base-multilingual-cased"
+    pooling: "mean"
+
+  - name: DIETClassifier
+    epochs: 1000
+    constrain_similarities: true
+    model_confidence: "softmax"
+    batch_size: [32, 64]
+
+  - name: EntitySynonymMapper
+
+policies:
+  - name: MemoizationPolicy
+    max_history: 10
+
+  - name: RulePolicy
+
+  - name: TEDPolicy
+    max_history: 10
+    epochs: 5000
+    constrain_similarities: true
+    model_confidence: "softmax"

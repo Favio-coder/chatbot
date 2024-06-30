@@ -1,0 +1,144 @@
+stories:
+- story: Saludo y pregunta sobre el estado
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2
+  - intent: que_tal
+  - action: utter_que_tal
+
+- story: Saludo y expresión de estrés
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2
+  - intent: estres
+  - action: utter_estres
+
+- story: Pregunta sobre el estado y respuesta sobre el estrés
+  steps:
+  - intent: que_tal
+  - action: utter_que_tal
+  - intent: estres
+  - action: utter_estres
+
+- story: Expresión de estrés y saludo
+  steps:
+  - intent: estres
+  - action: utter_estres
+  - intent: saludo
+  - action: utter_saludo_v2
+
+- story: Pregunta sobre el estado y agradecimiento
+  steps:
+  - intent: que_tal
+  - action: utter_que_tal
+  - intent: agradecimiento
+  - action: utter_agradecimiento
+
+- story: Saludo y despedida
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2
+  - intent: despedida
+  - action: utter_despedida
+
+- story: Pregunta sobre el estado y despedida
+  steps:
+  - intent: que_tal
+  - action: utter_que_tal
+  - intent: despedida
+  - action: utter_despedida
+
+- story: Saludo y solicitud de consejo
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2
+  - intent: consejo
+  - action: utter_consejo
+
+- story: Solicitud de consejo y agradecimiento
+  steps:
+  - intent: consejo
+  - action: utter_consejo
+  - intent: agradecimiento
+  - action: utter_agradecimiento
+
+- story: Saludo y petición de ayuda
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2
+  - intent: ayuda
+  - action: utter_ayuda
+
+- story: Petición de ayuda y consejo
+  steps:
+  - intent: ayuda
+  - action: utter_ayuda
+  - intent: consejo
+  - action: utter_consejo
+
+- story: Saludo y expresión de gratitud
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2
+  - intent: gratitud
+  - action: utter_gratitud
+
+- story: Expresión de gratitud y despedida
+  steps:
+  - intent: gratitud
+  - action: utter_gratitud
+  - intent: despedida
+  - action: utter_despedida
+
+- story: Saludo y pregunta sobre el estrés
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2
+  - intent: que_tal
+  - action: utter_que_tal
+  - intent: estres
+  - action: utter_estres
+
+- story: Saludo y expresión de estrés
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2
+  - intent: estres
+  - action: utter_estres
+  - intent: agradecimiento
+  - action: utter_agradecimiento
+
+- story: Pregunta sobre el estado y consejo
+  steps:
+  - intent: que_tal
+  - action: utter_que_tal
+  - intent: consejo
+  - action: utter_consejo
+
+- story: Saludo y solicitud de ayuda
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2
+  - intent: ayuda
+  - action: utter_ayuda
+
+- story: Expresión de estrés y despedida
+  steps:
+  - intent: estres
+  - action: utter_estres
+  - intent: despedida
+  - action: utter_despedida
+
+- story: Pregunta sobre el estado y expresión de gratitud
+  steps:
+  - intent: que_tal
+  - action: utter_que_tal
+  - intent: gratitud
+  - action: utter_gratitud
+
+- story: Saludo y solicitud de consejo
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2
+  - intent: consejo
+  - action: utter_consejo

@@ -1,0 +1,280 @@
+version: "3.1"
+
+rules:
+  - rule: Responder saludo
+    steps:
+      - intent: saludo
+      - action: utter_saludo
+
+  - rule: Responder despedida
+    steps:
+      - intent: despedida
+      - action: utter_despedida
+
+  - rule: Preguntar cómo está
+    steps:
+      - intent: que_tal
+      - action: utter_que_tal
+
+  - rule: Responder cuando se siente mal
+    steps:
+      - intent: mal
+      - action: utter_mal
+
+  
+
+  - rule: Responder cuando se siente más o menos
+    steps:
+      - intent: mas_menos
+      - action: utter_mas_menos
+
+  - rule: Responder cuando se siente ansioso
+    steps:
+      - intent: apoyo_ansiedad
+      - action: utter_apoyo_ansiedad
+
+  
+
+  - rule: Responder cuando se siente estresado
+    steps:
+      - intent: estres
+      - action: utter_estres
+
+  - rule: Dar recomendaciones de autocuidado
+    steps:
+      - intent: autocontrol
+      - action: utter_autocontrol
+
+  - rule: Brindar ayuda
+    steps:
+      - intent: ayuda
+      - action: utter_ayuda
+
+  
+
+  - rule: Comunicación y expresión
+    steps:
+      - intent: comunicacion
+      - action: utter_comunicacion
+
+  - rule: Actividad física recomendada
+    steps:
+      - intent: actividad_fisica
+      - action: utter_actividad_fisica
+
+  - rule: Meditación y mindfulness
+    steps:
+      - intent: meditacion
+      - action: utter_meditacion
+
+  - rule: Alimentación saludable
+    steps:
+      - intent: alimentacion_saludable
+      - action: utter_alimentacion_saludable
+
+  - rule: Mejorar el sueño
+    steps:
+      - intent: sueno
+      - action: utter_sueno
+
+  - rule: Recursos disponibles
+    steps:
+      - intent: recursos
+      - action: utter_recursos
+
+  - rule: Mejorar la autoestima
+    steps:
+      - intent: autoestima
+      - action: utter_autoestima
+
+  - rule: Buscar apoyo social
+    steps:
+      - intent: apoyo_social
+      - action: utter_apoyo_social
+
+  - rule: Consejos de salud mental
+    steps:
+      - intent: consejo_salud_mental
+      - action: utter_consejos_salud_mental
+
+  - rule: Expresión de emoción
+    steps:
+      - intent: emocion
+      - action: utter_emocion
+
+  - rule: Respuesta a sentirse bien
+    steps:
+      - intent: sentirse_bien
+      - action: utter_sentirse_bien
+
+
+  - rule: Expresión de alivio
+    steps:
+      - intent: alivio
+      - action: utter_alivio
+
+  - rule: Expresión de incertidumbre
+    steps:
+      - intent: incertidumbre
+      - action: utter_incertidumbre
+
+  - rule: Preocupación expresada
+    steps:
+      - intent: preocupacion
+      - action: utter_preocupacion
+
+  - rule: Sentimiento de paz
+    steps:
+      - intent: paz
+      - action: utter_paz
+
+  - rule: Práctica de atención plena
+    steps:
+      - intent: atencion_plena
+      - action: utter_atencion_plena
+
+  - rule: Ejercicios mentales
+    steps:
+      - intent: ejercicio_mental
+      - action: utter_ejercicio_mental
+
+  - rule: Buscar equilibrio
+    steps:
+      - intent: equilibrio
+      - action: utter_equilibrio
+
+  - rule: Necesidad de descanso
+    steps:
+      - intent: descanso
+      - action: utter_descanso
+
+  - rule: Búsqueda de fuentes confiables
+    steps:
+      - intent: fuentes
+      - action: utter_fuentes
+
+  - rule: Cambio de perspectiva
+    steps:
+      - intent: perspectiva
+      - action: utter_perspectiva
+
+  - rule: Necesidad de validación
+    steps:
+      - intent: validacion
+      - action: utter_validacion
+
+  - rule: Búsqueda de compañía
+    steps:
+      - intent: compania
+      - action: utter_compania
+
+  - rule: Necesidad de respaldo emocional
+    steps:
+      - intent: respaldo
+      - action: utter_respaldo
+
+  - rule: Trabajo en autoaprecio
+    steps:
+      - intent: autoaprecio
+      - action: utter_autoaprecio
+
+  - rule: Mejora de resistencia emocional
+    steps:
+      - intent: resistencia
+      - action: utter_resistencia
+
+  - rule: Necesidad de asistencia profesional
+    steps:
+      - intent: asistencia_profesional
+      - action: utter_asistencia_profesional
+
+  - rule: Consejos generales de salud mental
+    steps:
+      - intent: consejos_salud_mental
+      - action: utter_consejos_salud_mental
+
+  - rule: Promoción del bienestar
+    steps:
+      - intent: promocion
+      - action: utter_promocion
+
+  - rule: Apoyo para la depresión
+    steps:
+      - intent: apoyo_depresion
+      - action: utter_apoyo_depresion
+
+  - rule: Apoyo para la ansiedad
+    steps:
+      - intent: respaldo_ansiedad
+      - action: utter_respaldo_ansiedad
+
+  - rule: Expresar agradecimiento
+    steps:
+      - intent: agradecimiento
+      - action: utter_agradecimiento
+
+  - rule: Atención inmediata en crisis emocional
+    steps:
+      - intent: atencion_inmediata
+      - action: utter_atencion_inmediata
+
+  - rule: Emergencia psicológica
+    steps:
+      - intent: emergencia_psicologica
+      - action: utter_emergencia_psicologica
+
+  - rule: Pedir ayuda
+    steps: 
+    - intent: pedir_ayuda
+    - action: utter_pedir_ayuda
+
+  - rule: terapia 
+    steps: 
+      - intent: terapia 
+      - action: utter_terapia
+  
+  - rule: actuar frente a ansiedad 
+    steps: 
+      - intent: ansiedad 
+      - action: utter_ansiedad
+  
+  - rule: Expresas gratitud
+    steps: 
+      - intent: gratitud
+      - action: utter_gratitud
+
+  - rule: Responder al cuidado de emociones
+    steps: 
+      - intent: cuidar_emociones
+      - action: utter_cuidar_emociones
+
+  - rule: Actuar frente a la crisis emocional
+    steps: 
+      - intent: crisis_emocional
+      - action: utter_crisis_emocional
+
+  - rule: Responder sobre autocuidado
+    steps: 
+      - intent: autocuidado
+      - action: utter_autocuidado
+
+  - rule: Responder con consejos
+    steps: 
+      - intent: consejo
+      - action: utter_consejo
+
+  - rule: Responder exclusivamente a la depresion
+    steps: 
+      - intent:  depresion
+      - action:  utter_depresion
+
+  - rule: Pedir que sea mas especifico
+    steps: 
+      - intent: default
+      - action: utter_default
+
+  - rule: Expresar que todo esta bien
+    steps: 
+      - intent: bien
+      - action: utter_bien
+

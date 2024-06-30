@@ -1,0 +1,659 @@
+version: "3.1"
+
+nlu:
+- intent: apoyo_emocional
+  examples: |
+    - Necesito consejos para el apoyo emocional
+    - Me siento triste y no sé cómo manejarlo.
+    - Estoy pasando por un momento difícil; ¿puedes escucharme?
+    - Tengo malos amigos, necesito ayuda
+    - Termine una relación amorosa, necesito ayuda
+   
+- intent: saludo
+  examples: |
+    - Hola
+    - Buenas
+    - Buenos días
+    - Buenas tardes
+    - Buenas noches
+    - Hola, ¿qué tal?
+    - Hola, ¿cómo estás?
+    - Hola, ¿cómo te va?
+
+- intent: despedida
+  examples: |
+    - Adiós
+    - Hasta luego
+    - Nos vemos
+    - Cuídate
+    - Hasta la próxima
+    - Adiós, cuídate
+    - Chau
+    - Hasta pronto
+    - Nos vemos luego
+    - Hasta la próxima vez
+
+- intent: que_tal
+  examples: |
+    - ¿Qué tal?
+    - ¿Cómo te sientes hoy?
+    - ¿Cómo estás?
+    - ¿Cómo te va?
+    - ¿Qué hay de nuevo?
+    - ¿Qué tal tu día?
+    - ¿Qué tal estás?
+    - ¿Cómo va todo?
+    - ¿Cómo ha sido tu día?
+    - ¿Qué tal te va?
+
+- intent: mal
+  examples: |
+    - No me siento bien
+    - Me siento mal
+    - Estoy triste
+    - Estoy deprimido
+    - Estoy ansioso
+    - Estoy estresado
+    - Me siento fatal
+    - No estoy bien
+    - Estoy teniendo un mal día
+
+- intent: bien
+  examples: |
+    - Todo OK
+    - Estoy feliz
+    - Estoy bien
+    - Me va bien
+    - Estoy contento
+    - Me siento genial
+    - Estoy de buen humor
+    - Todo está en orden
+    - Me siento perfecto
+
+- intent: mas_menos
+  examples: |
+    - Estoy más o menos
+    - Así así
+    - Estoy regular
+    - No estoy ni bien ni mal
+    - Estoy en medio
+    - Me siento normal
+    - Estoy ok
+    - No estoy ni mal ni bien
+    - Estoy regular, ¿y tú?
+    - Más o menos, ¿y tú?
+
+- intent: ansiedad
+  examples: |
+    - Me siento ansioso por el futuro
+    - Estoy muy nervioso porque no puedo controlar mis pensamientos
+    - Tengo ansiedad cuando pienso en todo lo que podría salir mal
+    - Estoy preocupado todo el tiempo, especialmente sobre mi salud
+    - No puedo calmarme cuando pienso en todas las cosas que podrían ir mal
+    - Me preocupa todo, incluso las cosas pequeñas
+    - Tengo un ataque de ansiedad cuando pienso en situaciones sociales
+    - No puedo dejar de pensar en cosas malas que podrían pasar
+    - Estoy inquieto y no puedo dejar de preocuparme
+
+
+- intent: depresion
+  examples: |
+    - Me siento deprimido
+    - Estoy muy triste
+    - No tengo ganas de nada
+    - Todo me parece difícil
+    - No veo salida
+    - No me siento motivado
+    - Siento que nada tiene sentido
+    - Estoy muy abatido
+    - No tengo energía
+    - Todo parece oscuro
+
+- intent: tristeza
+  examples: |
+    - Me siento muy triste
+    - No tengo ánimo
+    - Estoy de bajón
+    - Estoy muy desanimado
+    - Me siento vacío
+    - Estoy llorando mucho
+    - Me siento solo
+    - Siento una gran tristeza
+    - Estoy muy apenado
+
+- intent: estres
+  examples: |
+    - Estoy muy estresado por el trabajo
+    - Tengo mucho estrés debido a mis responsabilidades
+    - No puedo con tanto estrés en la oficina
+    - Me siento abrumado por la cantidad de tareas que tengo
+    - Todo me resulta muy estresante cuando tengo plazos que cumplir
+    - No puedo relajarme debido a la presión constante de los plazos
+    - Siento una presión constante para cumplir con mis metas
+    - Tengo demasiado en mi mente con todos los proyectos en marcha
+    - No puedo concentrarme por el estrés de los exámenes
+
+
+- intent: autocuidado
+  examples: |
+    - ¿Cómo puedo cuidarme mejor?
+    - Quiero mejorar mi bienestar
+    - ¿Qué puedo hacer para mejorar mi estado de animo y mi salud?
+    - Necesito enfocarme en mí mismo
+    - ¿Cómo practico el autocuidado?
+    - ¿Qué actividades me recomiendas para el autocuidado?
+    - ¿Cómo puedo relajarme más?
+    - ¿Qué puedo hacer para cuidar mi salud mental?
+    - ¿Cómo practico el autocuidado diario?
+    - Quiero saber más sobre el autocuidado
+
+- intent: pedir_ayuda
+  examples: |
+    - Necesito ayuda
+    - ¿Puedes ayudarme?
+    - No sé qué hacer
+    - Necesito hablar con alguien
+    - Quiero buscar ayuda
+    - ¿Dónde puedo buscar ayuda?
+    - ¿Con quién puedo hablar?
+    - No puedo manejar esto solo
+    - Quiero encontrar un terapeuta
+    - ¿Qué debo hacer para buscar ayuda?
+
+- intent: recomendaciones
+  examples: |
+    - ¿Qué me recomiendas?
+    - ¿Qué puedo hacer para sentirme mejor?
+    - ¿Tienes algún consejo?
+    - ¿Qué actividades sugieres?
+    - ¿Qué puedo hacer para reducir el estrés?
+    - ¿Cómo puedo mejorar mi ánimo?
+    - ¿Qué técnicas puedo usar para relajarme?
+    - ¿Qué me sugieres para la ansiedad?
+    - ¿Qué debo hacer para mejorar mi salud mental?
+    - ¿Cómo puedo manejar mis emociones mejor?
+
+- intent: comunicacion
+  examples: |
+    - Quiero hablar sobre lo que siento
+    - Necesito expresar mis emociones
+    - Me cuesta hablar de mis sentimientos
+    - Quiero aprender a comunicarme mejor
+    - ¿Cómo puedo hablar de lo que me preocupa?
+    - ¿Cómo puedo abrirme más?
+    - ¿Qué debo hacer para comunicarme mejor?
+    - Quiero expresar mis pensamientos
+    - ¿Cómo hablo de mis problemas?
+    - ¿Cómo puedo mejorar mi comunicación?
+
+- intent: actividad_fisica
+  examples: |
+    - ¿Qué ejercicios me recomiendas?
+    - Quiero hacer más actividad física
+    - ¿Qué puedo hacer para mantenerme activo?
+    - ¿Cómo empiezo a hacer ejercicio?
+    - ¿Qué actividades físicas son buenas?
+    - ¿Qué ejercicios son buenos para el estrés?
+    - ¿Cómo puedo ser más activo?
+    - Quiero empezar a hacer deporte
+    - ¿Qué ejercicios ayudan para la ansiedad?
+    - ¿Qué actividad física es buena para la salud mental?
+
+- intent: meditacion
+  examples: |
+    - Quiero aprender a meditar
+    - ¿Cómo empiezo a meditar?
+    - ¿Qué técnicas de meditación recomiendas?
+    - ¿Cómo puedo practicar la meditación?
+    - ¿Qué beneficios tiene la meditación?
+    - ¿Cómo la meditación puede ayudarme?
+    - Quiero saber más sobre la meditación
+    - ¿Cómo puedo calmar mi mente con meditación?
+    - ¿Qué es la meditación mindfulness?
+    - ¿Cómo la meditación puede reducir la ansiedad?
+
+- intent: alimentacion_saludable
+  examples: |
+    - ¿Cómo puedo mejorar mi dieta?
+    - ¿Qué alimentos son buenos para la salud mental?
+    - Quiero comer más saludable
+    - ¿Qué debo comer para sentirme mejor?
+    - ¿Qué dieta es buena para el estrés?
+    - ¿Cómo afecta la alimentación a la salud mental?
+    - ¿Qué alimentos ayudan a mejorar el ánimo?
+    - ¿Qué puedo hacer para tener una dieta más saludable?
+    - ¿Cómo la alimentación puede mejorar mi bienestar?
+    - Quiero saber más sobre la alimentación saludable
+
+- intent: sueno
+  examples: |
+    - Tengo problemas para dormir
+    - No puedo dormir bien
+    - ¿Cómo puedo mejorar mi sueño?
+    - ¿Qué puedo hacer para dormir mejor?
+    - Me cuesta mucho dormir
+    - ¿Cómo puedo tener un mejor descanso?
+    - ¿Qué debo hacer para mejorar mi sueño?
+    - ¿Cómo puedo establecer una rutina de sueño?
+    - ¿Qué técnicas hay para dormir mejor?
+    - Quiero saber cómo mejorar la calidad de mi sueño
+
+- intent: recursos
+  examples: |
+    - ¿Dónde puedo encontrar ayuda?
+    - ¿Qué recursos hay para la salud mental?
+    - ¿Dónde puedo buscar información?
+    - ¿Qué servicios de salud mental hay?
+    - Quiero saber más sobre recursos de ayuda
+    - ¿Qué organizaciones ofrecen apoyo?
+    - ¿Dónde puedo buscar asistencia?
+    - ¿Qué opciones de ayuda hay?
+    - Quiero información sobre recursos de salud mental
+    - ¿Qué recursos están disponibles para el apoyo mental?
+
+- intent: autoestima
+  examples: |
+    - Me siento con baja autoestima
+    - Quiero mejorar mi autoestima
+    - ¿Cómo puedo sentirme mejor conmigo mismo?
+    - ¿Qué puedo hacer para tener más confianza?
+    - ¿Cómo puedo mejorar mi autoconcepto?
+    - ¿Qué actividades ayudan a la autoestima?
+    - Me gustaría saber cómo tener mejor autoestima
+    - ¿Cómo puedo fortalecer mi autoestima?
+    - Quiero aprender a valorarme más
+    - ¿Cómo puedo tener más seguridad en mí mismo?
+
+- intent: apoyo_social
+  examples: |
+    - Me siento cemasiado perdido
+    - Necesito apoyo de otras personas
+    - Quiero conectar más con otros
+    - ¿Cómo puedo buscar apoyo social?
+    - ¿Qué puedo hacer para sentirme menos solo?
+    - ¿Cómo puedo tener mejores relaciones?
+    - ¿Dónde puedo encontrar apoyo emocional?
+    - ¿Cómo puedo mejorar mis conexiones sociales?
+    - Quiero saber cómo tener más apoyo de mis amigos
+
+- intent: consejo_salud_mental
+  examples: |
+    - ¿Qué consejos tienes para cuidar mi salud mental?
+    - ¿Cómo puedo mejorar mi bienestar emocional y salud mental?
+    - Dame algunos consejos para reducir el estrés.
+    - ¿Qué puedo hacer para mantener una buena salud mental?
+    - ¿Cuáles son las mejores prácticas para mantener mi mente en forma?
+    - Dame sugerencias para mejorar mi estado de ánimo.
+
+- intent: recomendaciones
+  examples: |
+    - ¿Qué me recomiendas para mejorar mi estado de ánimo?
+    - ¿Tienes algún consejo para reducir el estrés?
+    - ¿Qué actividades sugieres para manejar la ansiedad?
+    - ¿Qué técnicas puedo usar para relajarme más?
+    - ¿Cómo puedo mejorar mi bienestar emocional?
+    - ¿Qué consejos tienes para cuidar mi bienestar emocional y salud mental?
+    - ¿Cómo puedo manejar mejor mis emociones?
+    - Dame sugerencias para aumentar mi autoestima.
+    - ¿Qué puedo hacer para tener más confianza en mí mismo?
+    - ¿Cuáles son las mejores prácticas para mantener una buena salud mental?
+
+
+
+
+
+- intent: emocion
+  examples: |
+    - Estoy emocionado
+    - Me siento feliz
+    - Estoy muy emocionada por eso
+    - ¡Qué emoción!
+    - ¡Estoy lleno de alegría!
+
+- intent: sentirse_bien
+  examples: |
+    - Me siento bien
+    - Estoy bien, gracias
+    - Me encuentro bien
+    - Todo está bien
+    - Me siento genial hoy
+
+
+
+- intent: alivio
+  examples: |
+    - ¡Qué alivio!
+    - Me siento aliviado
+    - Estoy aliviada de que haya pasado
+    - Me siento mucho mejor ahora
+    - Eso me quita un peso de encima
+
+- intent: incertidumbre
+  examples: |
+    - No estoy seguro
+    - No sé qué estoy haciendo con mi vida
+    - Estoy lleno de dudas
+    - No tengo certeza
+    - Todo es incierto
+
+- intent: preocupacion
+  examples: |
+    - Estoy preocupado
+    - Me preocupa eso
+    - Tengo muchas preocupaciones
+    - No puedo evitar preocuparme
+    - Me siento inquieto por eso
+
+- intent: paz
+  examples: |
+    - Siento paz
+    - Estoy en paz
+    - Todo está tranquilo
+    - Me siento tranquilo
+    - Estoy en un estado de paz interior
+
+- intent: atencion_plena
+  examples: |
+    - Practico la atención plena
+    - Estoy practicando mindfulness
+    - La atención plena me ayuda mucho
+    - Me gusta meditar
+    - Vivo el presente
+
+- intent: ejercicio_mental
+  examples: |
+    - Hago ejercicios mentales
+    - Practico actividades cognitivas
+    - Ejercito mi mente
+    - Realizo ejercicios de concentración
+    - Trabajo en mi agilidad mental
+
+- intent: equilibrio
+  examples: |
+    - Busco equilibrio
+    - Estoy buscando un equilibrio en mi vida
+    - Equilibrio espiritual
+    - Quiero equilibrar trabajo y vida personal
+    - Trato de mantener un equilibrio emocional
+
+- intent: descanso
+  examples: |
+    - Necesito descansar
+    - Voy a tomar un descanso
+    - El descanso es importante para mí
+    - Estoy cansado, necesito un descanso
+    - Descansaré un rato
+
+- intent: fuentes
+  examples: |
+    - Busco fuentes confiables
+    - ¿Dónde puedo encontrar información confiable?
+    - Necesito referencias confiables
+    - ¿Cuáles son las mejores fuentes para esto?
+    - ¿Puedes recomendarme algunas fuentes?
+
+- intent: perspectiva
+  examples: |
+    - Necesito otra perspectiva
+    - Quiero ver las cosas desde otro ángulo
+    - Estoy buscando una nueva perspectiva
+    - ¿Puedes ofrecerme una perspectiva diferente?
+    - Cambiaré mi perspectiva sobre esto
+
+- intent: validacion
+  examples: |
+    - Quiero sentirme validado
+    - Necesito validación en esto
+    - Estoy buscando validación
+    - ¿Puedes validar mis sentimientos?
+    - Quiero que mis sentimientos sean validados
+
+- intent: compania
+  examples: |
+    - Necesito compañía
+    - Quiero estar con alguien
+    - Estoy solo y necesito compañía
+    - ¿Puedes acompañarme?
+    - Extraño la compañía
+
+- intent: respaldo
+  examples: |
+    - Busco respaldo emocional
+    - Necesito apoyo emocional
+    - ¿Me puedes respaldar en esto?
+    - Estoy buscando respaldo
+    - ¿Puedes darme respaldo en esto?
+
+- intent: autoaprecio
+  examples: |
+    - Necesito trabajar en mi autoaprecio
+    - Quiero saber como valorar mis defector e imperfecciones
+    - Trabajaré en valorarme más
+    - Estoy trabajando en mi autoaprecio
+    - Quiero sentirme mejor conmigo mismo
+
+- intent: resistencia
+  examples: |
+    - Estoy trabajando en mi resistencia
+    - Quiero ser más resiliente
+    - Necesito fortalecer mi resistencia
+    - Estoy mejorando mi resistencia
+    - Quiero ser más fuerte emocionalmente
+
+- intent: asistencia_profesional
+  examples: |
+    - Necesito ayuda profesional
+    - Estoy considerando ver a un profesional
+    - Quiero asistencia profesional
+    - ¿Puedes recomendarme un profesional?
+    - Necesito hablar con un profesional
+
+- intent: consejos_salud_mental
+  examples: |
+    - ¿Tienes consejos para la salud mental?
+    - Quiero mejorar mi salud mental
+    - Necesito consejos de salud mental
+    - ¿Puedes darme consejos para cuidar mi salud mental?
+    - ¿Cómo puedo cuidar mejor mi salud mental?
+
+- intent: promocion
+  examples: |
+    - ¿Cómo puedo promover mi bienestar?
+    - Quiero promover mi salud mental
+    - ¿Cuáles son algunas estrategias de promoción del bienestar?
+    - ¿Puedes ayudarme a promover mi bienestar?
+    - ¿Qué puedo hacer para mejorar mi bienestar?
+
+- intent: apoyo_depresion
+  examples: |
+    - Necesito apoyo para la depresión
+    - ¿Cómo puedo recibir apoyo para la depresión?
+    - Estoy lidiando con la depresión, ¿puedes ayudarme?
+    - ¿Qué consejos tienes para alguien con depresión?
+    - ¿Cómo puedo apoyar a alguien que tiene depresión?
+
+- intent: respaldo_ansiedad
+  examples: |
+    - Necesito respaldo para la ansiedad
+    - ¿Cómo puedo sentirme más respaldado con la ansiedad?
+    - Estoy enfrentando ansiedad, ¿puedes apoyarme?
+    - ¿Qué estrategias hay para manejar la ansiedad?
+    - ¿Cómo puedo apoyar a alguien con ansiedad?
+
+
+
+
+
+- intent: emergencia_psicologica
+  examples: |
+    - Necesito ayuda psicológica urgente
+    - Tengo una emergencia psicológica
+    - Estoy en una situación crítica emocionalmente
+    - Urgente, necesito asistencia psicológica
+    - Me siento desesperado/a y necesito ayuda profesional
+
+- intent: atencion_inmediata
+  examples: |
+    - Necesito atención inmediata
+    - Urgente, necesito ayuda ahora mismo
+    - Requiero asistencia inmediata
+    - Estoy en una situación urgente y necesito apoyo
+    - ¿Puedes ayudarme de inmediato?
+
+- intent: agradecimiento
+  examples: |
+    - Muchas gracias por el consejo
+    - Gracias
+ 
+
+- intent: autocontrol
+  examples: |
+    - Necesito controlar mis emociones
+    - ¿Cómo puedo mejorar mi autocontrol?
+    - Estoy buscando técnicas para controlar mi temperamento
+    - Quiero aprender a manejar mejor mis reacciones
+    - ¿Tienes consejos para el autocontrol?
+
+- intent: ayuda
+  examples: |
+    - Necesito asistencia emocional
+    - ¿Puedes ayudarme con algo?
+    - Busco asistencia
+    - ¿Cómo me puedes ayudar?
+    - Requiero ayuda para sentirme mejor
+
+- intent: consejo
+  examples: |
+    - ¿Tienes algún consejo para mí?
+    - Necesito un consejo sobre cómo manejar mi ansiedad
+    - ¿Puedes darme un consejo sobre mi situación?
+    - ¿Qué me recomiendas hacer en este caso?
+    - Estoy buscando un buen consejo
+
+
+
+- intent: gratitud
+  examples: |
+    - Quiero expresar mi gratitud
+    - Estoy agradecido por tu ayuda
+    - Gracias por tu apoyo
+    - Agradezco mucho tus consejos
+    - Me siento agradecido por la asistencia
+
+- intent: terapia
+  examples: |
+    - Necesito información sobre terapia
+    - ¿Cómo puedo empezar una terapia?
+    - Quiero saber más sobre opciones de terapia
+    - Estoy interesado en recibir terapia
+    - ¿Qué tipo de terapia me recomiendas?
+
+- intent: apoyo_ansiedad
+  examples: |
+    - ¿Cómo puedo superar la ansiedad?
+    - Necesito consejos para manejar mi ansiedad.
+    - ¿Qué puedo hacer para controlar la ansiedad?
+    - Me siento ansioso, ¿puedes ayudarme?
+    - Estoy experimentando mucha ansiedad, ¿qué debo hacer?
+    - ¿Cómo puedo reducir mi ansiedad?
+    - Siento que mi ansiedad está fuera de control, ¿qué sugieres?
+    - ¿Hay técnicas para aliviar la ansiedad?
+    - ¿Qué puedo hacer para calmar mi ansiedad?
+    - Necesito ayuda con mi ansiedad, ¿puedes darme algunos consejos?
+    - ¿Cómo puedo lidiar con la ansiedad diaria?
+    - Estoy preocupado y ansioso, ¿cómo puedo manejar esto?
+    - ¿Puedes darme algunos métodos para controlar la ansiedad?
+    - Me gustaría saber cómo reducir la ansiedad en el trabajo.
+    - ¿Qué ejercicios puedo hacer para disminuir la ansiedad?
+    - ¿Tienes recomendaciones para tratar la ansiedad?
+    - La ansiedad me está afectando mucho, ¿qué me aconsejas?
+    - ¿Cuáles son las mejores formas de manejar la ansiedad?
+    - Estoy teniendo un ataque de ansiedad, ¿qué puedo hacer?
+    - ¿Cómo puedo controlar la ansiedad sin medicamentos?
+    - ¿Qué estrategias existen para reducir la ansiedad?
+    - ¿Puedes ayudarme a encontrar maneras de calmar mi ansiedad?
+    - ¿Qué técnicas de relajación me recomiendas para la ansiedad?
+    - Me siento ansioso todo el tiempo, ¿cómo puedo mejorar esto?
+    - ¿Qué pasos puedo seguir para manejar la ansiedad?
+    - ¿Qué puedo hacer para sentirme menos ansioso?
+    - ¿Hay formas naturales de reducir la ansiedad?
+    - ¿Cómo puedo enfrentar situaciones que me causan ansiedad?
+    - La ansiedad está afectando mi vida, ¿qué debo hacer?
+    - ¿Qué puedo hacer para evitar la ansiedad antes de dormir?
+    - ¿Cómo puedo prevenir ataques de ansiedad?
+    - Estoy luchando con la ansiedad, ¿puedes darme algunos consejos?
+    - ¿Qué hábitos pueden ayudar a reducir la ansiedad?
+    - ¿Cómo puedo manejar la ansiedad social?
+    - ¿Qué prácticas diarias pueden ayudar a controlar la ansiedad?
+    - ¿Tienes alguna recomendación para aliviar la ansiedad rápidamente?
+    - ¿Qué puedo hacer para calmarme cuando me siento ansioso?
+    - ¿Cuáles son los mejores métodos para reducir la ansiedad a largo plazo?
+    - ¿Qué alimentos pueden ayudar a reducir la ansiedad?
+    - ¿Cómo puedo manejar la ansiedad durante un examen?
+    - ¿Cómo puedo evitar que la ansiedad afecte mi salud?
+    - ¿Qué debo hacer si siento un ataque de ansiedad?
+    - ¿Puedes sugerirme actividades que me ayuden a reducir la ansiedad?
+    - ¿Qué recursos hay disponibles para lidiar con la ansiedad?
+    - ¿Qué puedo hacer si mi ansiedad empeora?
+    - ¿Cómo puedo evitar la ansiedad en situaciones estresantes?
+
+- intent: crisis_emocional
+  examples: |
+    - Estoy en una crisis emocional, ¿qué puedo hacer?
+    - Necesito ayuda urgente para una crisis emocional
+    - ¿Cómo manejo una crisis emocional?
+    - Estoy pasando por una crisis emocional, ¿qué me recomiendas?
+    - ¿A dónde puedo acudir en caso de una crisis emocional?
+    - Necesito hablar con alguien sobre una crisis emocional
+    - ¿Qué debo hacer si tengo una crisis emocional?
+    - Siento que estoy en una crisis emocional, ¿cómo me ayudan?
+    - Estoy en una situación de emergencia emocional, ¿qué pasos debo seguir?
+    - ¿Qué recursos existen para lidiar con una crisis emocional?
+    - ¿Cómo puedo recibir ayuda inmediata para una crisis emocional?
+    - Estoy experimentando una crisis emocional, ¿qué debo hacer ahora?
+    - Necesito apoyo para salir de una crisis emocional
+    - ¿Cuáles son las señales de una crisis emocional y cómo debo actuar?
+    - ¿Dónde puedo encontrar ayuda urgente para una crisis emocional?
+
+- intent: cuidar_emociones
+  examples: |
+    - ¿Cómo puedo cuidar mejor mis emociones?
+    - Necesito consejos para cuidar mis emociones
+    - Quiero aprender a manejar mis emociones de manera saludable
+    - ¿Qué prácticas me recomiendas para cuidar mis emociones?
+    - Estoy buscando maneras de cuidar mis emociones, ¿qué sugerencias tienes?
+    - ¿Cómo puedo mantener un equilibrio emocional?
+    - Quiero mejorar el cuidado de mis emociones, ¿cómo empiezo?
+    - ¿Cuáles son las mejores formas de cuidar mis emociones diarias?
+    - Necesito aprender a cuidar mis emociones, ¿qué debo hacer?
+    - ¿Qué técnicas existen para cuidar mejor mis emociones?
+    - ¿Cómo puedo gestionar mis emociones de manera efectiva?
+    - Estoy interesado/a en el autocuidado emocional, ¿qué pasos debo seguir?
+    - ¿Qué actividades ayudan a cuidar las emociones?
+    - Quiero desarrollar habilidades para cuidar mis emociones, ¿cómo lo hago?
+    - ¿Qué puedo hacer para mantener mis emociones en balance?
+- intent: default
+  examples: |
+    - No estoy seguro de lo que necesito
+    - Estoy confundido/a, ¿puedes ayudarme?
+    - No sé qué preguntar
+    - Estoy buscando algo pero no sé exactamente qué
+    - No entiendo muy bien lo que necesito
+    - Quiero hablar de algo, pero no sé cómo empezar
+    - Necesito ayuda, pero no sé en qué
+    - Me siento perdido/a
+    - No sé cómo explicar lo que quiero
+    - No sé qué quiero hacer
+    - ¿Me puedes ayudar con algo?
+    - Tengo una pregunta, pero no sé cómo formularla
+    - Estoy un poco desorientado/a
+    - Necesito información, pero no sé sobre qué
+    - No sé cuál es mi problema
+    - Estoy un poco confundido/a
+    - No sé cómo describir lo que necesito
+    - ¿Puedes ayudarme con algo, aunque no sé qué?
+    - Estoy buscando algo, pero no estoy seguro/a de qué
+    - Tengo una duda, pero no sé exactamente cuál es
+
+
+
