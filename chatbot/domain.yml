@@ -58,8 +58,211 @@ intents:
   - consejo
   - default
   - apoyo_emocional
+  - terapia_grupal
+  - psicoterapia
+  - psicoterapia_limitaciones
+  - presion_arterial
+  - presion_arterial_fluctuaciones
+  - hipertension_alzheimer
+  - medicamento_alzheimer
+  - estilo_vida_alzheimer
+  - estres_ansiedad_presion
+  - transtornos_sueno
+  - genetica_alzheimer
+  - aumentar_accidente
+  - accidentes_alzheimer
+  - prevenir_accidentes
+  - visual_alzheimer
+  - neuronas
+  - condiciones_legales
+  - deambulacion_consejo
+  - familiar_alzheimer
 
+  
 responses:
+  utter_familiar_alzheimer: 
+    - text: "Es triste escuchar que tu abuelo tiene Alzheimer, recuerda mantener la calma y pedir ayuda si la necesitas. Hay recursos disponibles para apoyarte."
+    - text: "Te entiendo, tener una persona con Alzheimer en la familia es difícil. Recuerda pedir consejos a profesionales para manejar mejor la situación."
+    - text: "Establece una rutina diaria para tu abuelo. Esto puede ayudar a reducir la confusión y brindar estabilidad a su vida diaria."
+    - text: "Comunica de manera clara y sencilla. Usa frases cortas y un tono calmado para facilitar la comprensión y reducir la ansiedad."
+    - text: "Asegura el entorno de tu abuelo. Elimina peligros como alfombras sueltas y asegura una buena iluminación para prevenir caídas."
+    - text: "Involucra a tu abuelo en actividades mentales y físicas. Ejercicios suaves y juegos de memoria pueden ayudar a mantener su bienestar general."
+    - text: "Considera usar dispositivos de identificación y rastreo, como pulseras y GPS, para garantizar su seguridad en caso de que se pierda."
+    - text: "Asegúrate de que su dieta sea equilibrada. Una nutrición adecuada puede influir positivamente en su salud y energía diaria."
+    - text: "Explora terapias no farmacológicas, como la música o el arte. Estas pueden mejorar su calidad de vida y reducir el estrés."
+    - text: "Ayuda a tu abuelo con su cuidado personal y asegúrate de que esté cómodo con ropa adecuada para su situación."
+    - text: "Busca apoyo emocional. Escucha sus sentimientos y mantén una actitud positiva y cariñosa para hacerle sentir amado."
+    - text: "Infórmate sobre el Alzheimer para manejar mejor los síntomas y desafíos que puedan surgir. Conocer la enfermedad te permitirá brindar un mejor cuidado."
+    - text: "No te olvides de cuidar de ti mismo. Busca grupos de apoyo para cuidadores y considera la ayuda profesional para manejar el estrés del cuidado."
+    - text: "Planifica legalmente y financieramente para el futuro. Establece documentos importantes como poderes notariales y directivas anticipadas para facilitar la toma de decisiones."
+  utter_terapia_grupal:
+    - text: "Sí, la terapia de grupo ofrece a los pacientes de Alzheimer la oportunidad de conectarse con otras personas que enfrentan desafíos similares, compartir experiencias, aprender unos de otros y obtener apoyo, validación y camaradería en un entorno grupal seguro y empático."
+    - text: "La terapia de grupo proporciona un espacio donde los pacientes de Alzheimer pueden expresar sus sentimientos y preocupaciones, y recibir consejos prácticos y emocionales de otros que comprenden su situación."
+    - text: "Participar en terapia de grupo puede ayudar a los pacientes de Alzheimer a sentirse menos aislados y solos, ya que encuentran comprensión y apoyo entre sus compañeros."
+    - text: "En la terapia de grupo, los pacientes de Alzheimer pueden descubrir nuevas estrategias para manejar su condición y mejorar su calidad de vida, basándose en las experiencias compartidas del grupo."
+    - text: "La terapia de grupo también puede ser beneficiosa para los cuidadores, ya que pueden intercambiar ideas, recursos y técnicas de cuidado, y recibir apoyo emocional de otros cuidadores en situaciones similares."
+    - text: "Los encuentros grupales pueden proporcionar a los pacientes de Alzheimer un sentido renovado de propósito y pertenencia, al participar en actividades y discusiones significativas."
+    - text: "La interacción regular en un entorno de terapia de grupo puede estimular la mente y el estado de ánimo de los pacientes de Alzheimer, promoviendo una mejor salud mental y emocional."
+    - text: "La terapia de grupo puede ofrecer un espacio seguro para explorar y abordar las emociones difíciles que acompañan al diagnóstico y progresión del Alzheimer, facilitando la aceptación y adaptación."
+    - text: "Además de apoyo emocional, la terapia de grupo puede proporcionar información educativa sobre el Alzheimer, ayudando a los pacientes y cuidadores a entender mejor la enfermedad y sus efectos."
+    - text: "A través de la terapia de grupo, los pacientes de Alzheimer pueden desarrollar nuevas amistades y redes de apoyo, fortaleciendo sus relaciones sociales y mejorando su bienestar general."
+
+  utter_psicoterapia:
+    - text: "Sí, la psicoterapia puede facilitar debates sobre la planificación anticipadade la atención, las preferencias al final de la vida, las opciones de cuidados paliativos, los servicios de cuidados paliativos y el apoyo emocional para pacientes y familias que atraviesan las transiciones y la toma de decisiones al final de la vida."
+    - text: "La psicoterapia brinda a los cuidadores estrategias de afrontamiento, técnicas de manejo del estrés, validación, apoyo emocional y educación sobre autocuidado, establecimiento de límites y habilidades de comunicación efectiva, lo que les permite priorizar su bienestar mientras cuidan a un ser querido con Alzheimer."
+    - text: "La psicoterapia enseña a los pacientes de Alzheimer habilidades de afrontamiento adaptativas, técnicas de reducción del estrés, prácticas de atención plena, ejercicios de relajación y estrategias de reencuadre cognitivo para gestionar la angustia emocional, mejorar la autoconciencia y cultivar un sentido de fuerza interior y aceptación frente a la adversidad."
+    - text: "Sí, la psicoterapia ayuda a los cuidadores a procesar el duelo, la pérdida, el duelo anticipado y la pérdida ambigua asociada con el deterioro progresivo de su ser querido con Alzheimer, validando sus emociones, normalizando sus experiencias y brindando un espacio de apoyo para el duelo y la curación."
+    - text: "La psicoterapia enseña a los pacientes de Alzheimer estrategias compensatorias, ayudas para la memoria, señales externas y modificaciones ambientales para controlar la pérdida de memoria, mantener la función cognitiva y preservar la independencia funcional en las actividades diarias, mejorando la confianza y la autoeficacia a pesar de los desafíos cognitivos."
+    - text: "La psicoterapia puede ayudar a los pacientes de Alzheimer a identificar y expresar sus emociones, proporcionando un espacio seguro para hablar sobre sus miedos, ansiedades y preocupaciones."
+    - text: "A través de la psicoterapia, los pacientes pueden aprender técnicas de relajación y meditación que ayudan a reducir la ansiedad y el estrés asociados con la enfermedad de Alzheimer."
+    - text: "La psicoterapia también puede ayudar a los pacientes de Alzheimer a desarrollar una rutina diaria estructurada, lo que puede mejorar su sentido de control y reducir la confusión."
+    - text: "Los terapeutas pueden trabajar con los pacientes de Alzheimer para mejorar sus habilidades de comunicación, lo que puede facilitar la interacción con familiares y cuidadores."
+    - text: "La psicoterapia puede ofrecer intervenciones basadas en la reminiscencia, donde los pacientes de Alzheimer se involucran en recordar y hablar sobre experiencias pasadas significativas, lo que puede mejorar el estado de ánimo y el bienestar emocional."
+    - text: "Los cuidadores pueden beneficiarse de la psicoterapia al recibir orientación sobre cómo manejar comportamientos desafiantes y cómo establecer un ambiente seguro y de apoyo para el paciente con Alzheimer."
+    - text: "La psicoterapia puede incluir sesiones familiares donde se abordan dinámicas familiares y se mejora la comunicación entre los miembros de la familia, promoviendo un entorno más cohesivo y de apoyo."
+    - text: "La psicoterapia puede proporcionar recursos y referencias a grupos de apoyo y otras formas de asistencia comunitaria, ayudando a los pacientes y cuidadores a conectarse con redes de apoyo más amplias."
+    - text: "En las sesiones de psicoterapia, se pueden desarrollar planes de cuidado personalizados que se adapten a las necesidades y preferencias específicas del paciente y su familia."
+    - text: "La psicoterapia puede ayudar a los pacientes de Alzheimer a mantener su identidad y sentido de propósito, enfocándose en sus fortalezas y habilidades residuales."
+    - text: "La terapia cognitivo-conductual puede ser utilizada en la psicoterapia para ayudar a los pacientes de Alzheimer a reestructurar pensamientos negativos y adoptar una perspectiva más positiva y resiliente."
+
+
+  utter_psicoterapia_limitaciones:
+    - text: "La psicoterapia puede no ser adecuada para pacientes con deterioro cognitivo grave, déficits de comunicación o desafíos de comportamiento que impiden la participación activa en las sesiones de terapia, lo que requiere enfoques alternativos para abordar sus necesidades y limitaciones únicas."
+    - text: "En casos de Alzheimer avanzado, los pacientes pueden tener dificultades para comprender y seguir las intervenciones terapéuticas, lo que limita la efectividad de la psicoterapia convencional."
+    - text: "La psicoterapia puede ser menos efectiva si el paciente de Alzheimer experimenta altos niveles de agitación o agresividad, ya que estos comportamientos pueden interferir con el proceso terapéutico."
+    - text: "Los problemas de memoria y concentración en pacientes con Alzheimer pueden dificultar la retención de información y la aplicación de técnicas aprendidas en la psicoterapia, lo que puede limitar sus beneficios."
+    - text: "La psicoterapia requiere una cierta capacidad de introspección y auto-reflexión que puede estar comprometida en pacientes con Alzheimer avanzado, limitando la profundidad y efectividad de las sesiones."
+    - text: "Los trastornos del lenguaje asociados con el Alzheimer, como la afasia, pueden impedir la comunicación efectiva durante la psicoterapia, haciendo necesario adaptar las técnicas terapéuticas o buscar alternativas."
+    - text: "La psicoterapia puede no abordar todas las necesidades de los pacientes con Alzheimer, especialmente aquellas relacionadas con el manejo físico y médico de la enfermedad, requiriendo un enfoque multidisciplinario."
+    - text: "La efectividad de la psicoterapia puede verse limitada por la progresión de la enfermedad de Alzheimer, que puede reducir la capacidad del paciente para beneficiarse de las intervenciones terapéuticas a lo largo del tiempo."
+    - text: "En algunos casos, los pacientes con Alzheimer pueden no estar dispuestos o no ser capaces de participar en la psicoterapia debido a la falta de conciencia de su condición o resistencia al tratamiento."
+    - text: "La disponibilidad de terapeutas capacitados en trabajar con pacientes con Alzheimer puede ser limitada, lo que puede restringir el acceso a la psicoterapia para estos individuos."
+    - text: "Los costos asociados con la psicoterapia pueden ser prohibitivos para algunas familias, limitando el acceso a este tipo de tratamiento para los pacientes con Alzheimer."
+    - text: "La psicoterapia puede necesitar ser adaptada significativamente para ser efectiva en pacientes con Alzheimer, y no todos los terapeutas están capacitados para hacer estos ajustes necesarios."
+    - text: "En situaciones donde la psicoterapia no es adecuada, otros enfoques como la terapia ocupacional, la terapia de arte o la musicoterapia pueden ofrecer beneficios alternativos para los pacientes con Alzheimer."
+    - text: "Es importante que las expectativas sobre la psicoterapia sean realistas, ya que puede no ser capaz de revertir o detener el progreso del Alzheimer, pero puede ofrecer apoyo emocional y mejorar la calidad de vida en algunos casos."
+ 
+ 
+  utter_presion_arterial:
+    - text: "Investigaciones recientes sugieren que la presión arterial alta en la mediana edad puede aumentar el riesgo de desarrollar la enfermedad de Alzheimer en el futuro. Los estudios han demostrado que las personas con hipertensión pueden tener una mayor probabilidad de desarrollar Alzheimer o experimentar deterioro cognitivo en comparación con aquellos con niveles normales de presión arterial."
+    - text: "La presión arterial alta puede provocar cambios estructurales en el cerebro, como daño a los vasos sanguíneos y reducción del flujo sanguíneo, lo que puede contribuir al desarrollo de la enfermedad de Alzheimer. Los niveles elevados de presión arterial pueden dañar pequeños vasos sanguíneos del cerebro, provocando cambios microvasculares, inflamación y estrés oxidativo, que se asocian con procesos neurodegenerativos y deterioro cognitivo característicos de la enfermedad de Alzheimer."
+    - text: "Sí, la presión arterial alta es un factor de riesgo importante para la demencia vascular, un tipo de demencia caracterizada por un deterioro cognitivo debido a un flujo sanguíneo deficiente al cerebro causado por el daño a los vasos sanguíneos. La demencia vascular comparte similitudes con la enfermedad de Alzheimer en términos de síntomas cognitivos y patología, y se sabe que la hipertensión exacerba el daño vascular y aumenta el riesgo de desarrollar tanto Alzheimer como demencia vascular."
+    - text: "Si bien no se han establecido objetivos específicos de presión arterial para reducir el riesgo de enfermedad de Alzheimer, generalmente se recomiendamantener la presión arterial dentro del rango normal para promover la salud del cerebro y reducir el riesgo de deterioro cognitivo asociado con el envejecimiento y las enfermedades neurodegenerativas. Las estrategias de control de la presión arterial pueden incluir modificaciones en el estilo de vida, como una dieta saludable, ejercicio regular, reducción del estrés, control del peso y medicamentos, según lo prescrito por un proveedor de atención médica según los factores de riesgo individuales y los objetivos del tratamiento."
+    - text: "Cada vez hay más pruebas que sugieren que controlar la presión arterial mediante modificaciones en el estilo de vida y medicamentos puede ayudar a reduci el riesgo de desarrollar la enfermedad de Alzheimer o retrasar su aparición. Manejar la hipertensión de manera efectiva puede ayudar a preservar la función cognitiva, proteger la salud del cerebro y mitigar los procesos neurodegenerativos asociados con la enfermedad de Alzheimer al promover un flujo sanguíneo saludable, reducir la inflamación y minimizar el daño vascular y el estrés oxidativo en el cerebro."
+    - text: "El control de la presión arterial en pacientes ya diagnosticados con la enfermedad de Alzheimer puede ayudar a retardar la progresión del deterioro cognitivo, reducir el riesgo de complicaciones como accidentes cerebrovasculares o eventos cardiovasculares y mejorar la calidad de vida en general. Optimizar el control de la presión arterial mediante medicamentos, cambios en el estilo de vida y un seguimiento regular puede ayudar a respaldar la salud del cerebro, mejorar la eficacia del tratamiento y potencialmente retrasar la progresión de los síntomas del Alzheimer al preservar la función neuronal y reducir el daño vascular en el cerebro."
+  
+  utter_presion_arterial_fluctuaciones:
+    - text: "Las fluctuaciones de la presión arterial, en particular las caídas o los picos repentinos, pueden afectar negativamente la función cognitiva y aumentar el riesgo de deterioro cognitivo en personas con riesgo de padecer la enfermedad de Alzheimer. La variabilidad de la presión arterial puede afectar la perfusión cerebral, lo que provoca episodios transitorios de hipoperfusión o hiperperfusión en el cerebro, que pueden alterar la actividad neuronal, perjudicar el procesamiento cognitivo y contribuir al desarrollo o la progresión de la patología de Alzheimer."
+    - text: "Las variaciones bruscas en la presión arterial pueden comprometer la salud cerebral, causando daños en los vasos sanguíneos y disminuyendo el flujo de sangre al cerebro, lo cual es crítico para la cognición en pacientes con riesgo de Alzheimer."
+    - text: "Mantener una presión arterial estable es crucial para prevenir eventos de hipoxia cerebral y evitar el deterioro neuronal que puede desencadenar o acelerar los síntomas de Alzheimer en individuos predispuestos."
+    - text: "La inestabilidad en la presión arterial puede llevar a condiciones de estrés oxidativo en el cerebro, afectando las funciones cognitivas y aumentando la probabilidad de un rápido declive cognitivo en personas con Alzheimer."
+
+  utter_hipertension_alzheimer:
+    - text: "La hipertensión contribuye al desarrollo de los cambios cerebrales relacionados con el Alzheimer a través de diversos mecanismos, entre ellos la promoción de la enfermedad de los vasos cerebrales pequeños, lesiones de la sustancia blanca, microinfartos y neuroinflamación, que son características patológicas comunes observadas en individuos con enfermedad de Alzheimer. La exposición crónica a la presión arterial alta puede dañar la integridad de la barrera hematoencefálica, alterar la autorregulación cerebral y perjudicar la función neuronal, lo que conduce a la lesión neuronal, la disfunción sináptica y el deterioro cognitivo característicos de la patología del Alzheimer."
+    - text: "La hipertensión puede acelerar el daño neurovascular, incrementando las probabilidades de microinfartos cerebrales y promoviendo la inflamación, factores que están directamente relacionados con el Alzheimer."
+    - text: "El mantenimiento de una presión arterial alta durante largos periodos puede causar lesiones microscópicas en el cerebro, facilitando la aparición de síntomas neurodegenerativos como los observados en el Alzheimer."
+    - text: "Los pacientes con hipertensión tienen un mayor riesgo de desarrollar placas amiloides y ovillos neurofibrilares, que son signos distintivos de la enfermedad de Alzheimer."
+
+  utter_medicamento_alzheimer:
+    - text: "Se ha sugerido que algunos medicamentos para la presión arterial, como los inhibidores de la enzima convertidora de angiotensina (ECA), los bloqueadores de los receptores de angiotensina II (BRA), los bloqueadores de los canales de calcio y los diuréticos, tienen posibles efectos neuroprotectores contra la enfermedad de Alzheimer al modular la función vascular, reducir la inflamación y promover la neuroplasticidad y la integridad sináptica en el cerebro. Sin embargo, se necesita más investigación para determinar los mecanismos específicos y los beneficios clínicos de los medicamentos para la presión arterial en la prevención o el tratamiento de la enfermedad de Alzheimer."
+    - text: "Algunos antihipertensivos pueden ofrecer beneficios adicionales al mejorar la perfusión cerebral y reducir la inflamación, factores que podrían ayudar a mitigar el riesgo de Alzheimer."
+    - text: "Los medicamentos como los inhibidores de la ECA y los BRA pueden tener un impacto positivo en la salud neuronal al mejorar la circulación cerebral y proteger contra el daño oxidativo."
+    - text: "El uso de ciertos diuréticos no solo ayuda a controlar la presión arterial, sino que también puede proporcionar efectos neuroprotectores al reducir la carga de placas amiloides en el cerebro."
+
+  utter_estilo_vida_alzheimer:
+    - text: "La modificación del estilo de vida, incluida la adopción de una dieta saludable rica en frutas, verduras, cereales integrales y proteínas magras, y la práctica de ejercicio físico regular, puede ayudar a reducir la presión arterial, mejorar la salud vascular y reducir el riesgo de enfermedad de Alzheimer. Una dieta saludable para el corazón y ejercicio aeróbico regular pueden promover la aptitud cardiovascular, mejorar el flujo sanguíneo al cerebro, estimular la neurogénesis y proteger contra el deterioro cognitivo relacionado con la edad y enfermedades neurodegenerativas como el Alzheimer."
+    - text: "Incorporar hábitos saludables como una dieta equilibrada y ejercicio regular no solo beneficia la salud cardiovascular sino que también puede tener un impacto positivo en la prevención del Alzheimer."
+    - text: "La actividad física regular y una alimentación rica en antioxidantes pueden ayudar a reducir la inflamación y el estrés oxidativo en el cerebro, factores clave en la prevención del Alzheimer."
+    - text: "El ejercicio aeróbico y una dieta mediterránea son recomendados para mejorar la salud cerebral y reducir los factores de riesgo asociados con el Alzheimer."
+
+  utter_estres_ansiedad_presion:
+    - text: "El estrés y la ansiedad crónicos relacionados con la presión arterial alta pueden contribuir al deterioro cognitivo y aumentar el riesgo de enfermedad de Alzheimer al activar el sistema de respuesta al estrés del cuerpo, desencadenar vías inflamatorias y promover el daño oxidativo y la disfunción neuronal en el cerebro. La exposición prolongada a hormonas del estrés como el cortisol puede afectar la plasticidad sináptica, alterar la formación de la memoria y acelerar la progresión de la patología del Alzheimer, lo que resalta la importancia del manejo del estrés y el bienestar psicológico para mantener la salud cognitiva y reducir el riesgo de Alzheimer."
+    - text: "El manejo del estrés es crucial para la salud cerebral, ya que niveles altos de estrés pueden aumentar la presión arterial y, a su vez, el riesgo de desarrollar Alzheimer."
+    - text: "Las técnicas de reducción del estrés, como la meditación y el yoga, pueden ayudar a mantener una presión arterial saludable y proteger contra el deterioro cognitivo asociado con el Alzheimer."
+    - text: "El estrés crónico puede activar el sistema nervioso simpático, aumentando la inflamación cerebral y contribuyendo al desarrollo de enfermedades neurodegenerativas como el Alzheimer."
+
+  utter_transtornos_sueno:
+    - text: "La mala calidad del sueño y los trastornos del sueño, como la apnea del sueño, el insomnio y la alteración de los ciclos de sueño-vigilia, pueden alterar la regulación de la presión arterial, aumentar la actividad simpática y elevar el riesgo de hipertensión, enfermedades cardiovasculares y enfermedad de Alzheimer. Las alteraciones del sueño afectan el sistema linfático, que es responsable de eliminar los desechos metabólicos y las proteínas tóxicas del cerebro, incluida la beta-amiloide, una proteína característica asociada con la patología del Alzheimer. Abordar los problemas del sueño y promover hábitos de sueño saludables puede ayudar a regular la presión arterial, mejorar la función cerebral y reducir el riesgo de deterioro cognitivo relacionado con el Alzheimer."
+    - text: "Un sueño adecuado es esencial para la salud cerebral, ya que el sueño de mala calidad puede aumentar los riesgos de hipertensión y Alzheimer."
+    - text: "Los trastornos del sueño pueden impedir la eliminación efectiva de toxinas cerebrales, como la beta-amiloide, aumentando el riesgo de Alzheimer."
+    - text: "Promover hábitos de sueño saludables es fundamental para mantener la presión arterial bajo control y proteger contra el deterioro cognitivo."
+
+  utter_genetica_alzheimer:
+    - text: "Si bien la genética puede desempeñar un papel tanto en la regulación de la presión arterial como en el riesgo de enfermedad de Alzheimer, la relación entre la genética de la presión arterial y la patología de la enfermedad de Alzheimer es compleja y multifactorial e implica interacciones entre variantes genéticas, factores ambientales e influencias del estilo de vida. Varios genes asociados con la regulación de la presión arterial, la función endotelial y la integridad vascular se han implicado en la susceptibilidad a la enfermedad de Alzheimer, destacando la superposición genética y las vías biológicas compartidas entre la hipertensión y la neurodegeneración en la patología de la enfermedad de Alzheimer."
+    - text: "La predisposición genética puede influir tanto en la regulación de la presión arterial como en la susceptibilidad al Alzheimer, sugiriendo una conexión biológica subyacente."
+    - text: "Genes como el APOE-e4 están asociados tanto con un mayor riesgo de Alzheimer como con problemas de regulación de la presión arterial."
+    - text: "Las variantes genéticas que afectan la salud vascular también pueden influir en el desarrollo de enfermedades neurodegenerativas como el Alzheimer."
+
+  utter_aumentar_accidente:
+    - text: "La enfermedad de Alzheimer puede aumentar el riesgo de accidentes debido al deterioro cognitivo, el deterioro del juicio y los cambios en la percepción y la conciencia espacial. A medida que avanza la enfermedad, las personas pueden experimentar dificultades para procesar información, tomar decisiones y realizar tareas cotidianas, lo que puede provocar accidentes, caídas y lesiones."
+    - text: "El Alzheimer afecta la capacidad de las personas para evaluar riesgos y reaccionar adecuadamente, incrementando la probabilidad de accidentes domésticos."
+    - text: "Las personas con Alzheimer pueden olvidar apagar la estufa, dejar puertas abiertas o tropezar con obstáculos debido a su deterioro cognitivo."
+    - text: "El declive en la coordinación motora y el equilibrio en pacientes con Alzheimer los hace más vulnerables a caídas y otros accidentes."
+
+  utter_accidentes_alzheimer:
+    - text: "La enfermedad de Alzheimer afecta la función cognitiva al causar daño progresivo en el cerebro. Los pacientes con Alzheimer pueden ser más propensos a sufrir accidentes como caídas, resbalones, quemaduras, cortes y errores de medicación debido a problemas cognitivos, déficits motores, problemas de equilibrio y dificultades con la coordinación y las habilidades motoras. Además, las personas con Alzheimer pueden correr un mayor riesgo de deambular, perderse y encontrarse con peligros ambientales tanto en interiores como en exteriores, lo que puede provocar accidentes y lesiones."
+    - text: "El deterioro de la memoria y la confusión pueden llevar a las personas con Alzheimer a tomar decisiones inseguras, como cruzar la calle sin precaución."
+    - text: "Los problemas de equilibrio y coordinación en el Alzheimer aumentan el riesgo de caídas, que pueden resultar en lesiones graves."
+    - text: "La desorientación espacial es común en el Alzheimer, lo que puede llevar a las personas a perderse y exponerse a situaciones peligrosas."
+
+  
+  utter_prevenir_accidentes:
+    - text: "Los familiares y cuidadores pueden ayudar a prevenir accidentes en personas con la enfermedad de Alzheimer creando un entorno seguro y de apoyo, implementando medidas de seguridad en el hogar y brindando supervisión y asistencia con las actividades diarias. Las estrategias pueden incluir eliminar los riesgos de tropiezo, instalar pasamanos y barras de apoyo, asegurar objetos punzantes y productos químicos domésticos, utilizar dispositivos de asistencia y ayudas para la movilidad y proporcionar instrucciones y recordatorios claros para reducir el riesgo de accidentes y promover la seguridad en el hogar."
+    - text: "Las señales de advertencia de un mayor riesgo de accidentes en pacientes con Alzheimer pueden incluir confusión, desorientación, olvidos, agitación, falta de juicio, dificultad para seguir instrucciones, marcha inestable, caídas frecuentes y accidentes como quemaduras, cortes, hematomas o sobredosis de medicamentos. Los familiares y cuidadores deben monitorear los cambios en el comportamiento y la movilidad y tomar medidas proactivas para abordar las preocupaciones de seguridad y prevenir accidentes antes de que ocurran."
+    - text: "El deterioro cognitivo y la pérdida de memoria en pacientes con Alzheimer pueden afectar las estrategias de prevención de accidentes al afectar la capacidad del individuo para reconocer y responder a los riesgos de seguridad, recordar instrucciones de seguridad y procedimientos de emergencia, y aprender y adaptarse a nuevas medidas y rutinas de seguridad. Es posible que los familiares y cuidadores necesiten implementar instrucciones simplificadas, señales visuales y técnicas de entrenamiento repetitivas para reforzar conductas de seguridad y reducir el riesgo de accidentes en personas con enfermedad de Alzheimer."
+    - text: "Sí, los accidentes en pacientes con Alzheimer pueden provocar lesiones graves, complicaciones médicas y resultados de salud adversos, incluidas fracturas, lesiones en la cabeza, laceraciones, infecciones y exacerbación de afecciones de salud subyacentes. Las caídas y los accidentes también pueden provocar hospitalización, deterioro funcional, pérdida de independencia y disminución de la calidad de vida de las personas con enfermedad de Alzheimer, lo que destaca la importancia de la prevención de accidentes y la gestión proactiva de los riesgos de seguridad."
+    - text: "El manejo de la medicación es fundamental para prevenir accidentes en pacientes con Alzheimer, ya que los errores de medicación, las interacciones entre medicamentos y los efectos adversos pueden contribuir al deterioro cognitivo, mareos, debilidad y caídas. Los familiares y cuidadores deben asegurarse de que los medicamentos se almacenen de forma segura, se administren correctamente y se controlen periódicamente para detectar cambios en la dosis, la frecuencia o los efectos secundarios. Los proveedores de atención médica también pueden revisar las listas de medicamentos, ajustar los planes de tratamiento y educar a los pacientes y cuidadores sobre la seguridad de los medicamentos y las estrategias de cumplimiento para minimizar el riesgo de accidentes y daños relacionados con los medicamentos."
+    - text: "Las modificaciones ambientales y las tecnologías de asistencia pueden ayudar a reducir los accidentes en personas con enfermedad de Alzheimer al mejorar la seguridad, la movilidad y la independencia en el hogar. Los ejemplos incluyen instalar barras de apoyo y pasamanos, usar tapetes y alfombras antideslizantes, etiquetar artículos del hogar, asegurar puertas y ventanas, instalar luces con sensores de movimiento y usar dispositivos portátiles y rastreadores GPS para monitorear el comportamiento deambulante y localizar personas que puedan perderse o desorientarse. . Al crear un entorno accesible y de apoyo, los cuidadores pueden mitigar los riesgos de seguridad y promover la autonomía y el bienestar de los pacientes con Alzheimer."
+
+  utter_visual_alzheimer:
+    - text: "La enfermedad de Alzheimer puede afectar el sistema visual y provocar diversosproblemas oculares, incluidos cambios en la visión, la percepción y los movimientos oculares. A medida que avanza la enfermedad, las personas pueden experimentar dificultades con el procesamiento visual, la percepción de profundidad y el reconocimiento de objetos y rostros, lo que puede afectar las actividades diarias y la calidad de vida."
+    - text: "La enfermedad de Alzheimer puede afectar la visión y la salud ocular a través de cambios neurodegenerativos en el cerebro que afectan las vías visuales, los músculos oculares y las estructuras involucradas en la percepción y el procesamiento visual. Los problemas de visión comunes en los pacientes con Alzheimer pueden incluir visión borrosa, dificultad para enfocar, pérdida de visión periférica y problemas con la percepción de profundidad y la sensibilidad al contraste."
+    - text: "Si bien la enfermedad de Alzheimer en sí no es una afección ocular primaria, las personas con Alzheimer pueden tener un mayor riesgo de desarrollar enfermedades oculares relacionadas con la edad, como cataratas, glaucoma, degeneración macular y retinopatía diabética, debido a factores como el envejecimiento, la genética, el estilo de vida y comorbilidades. Estas afecciones oculares pueden exacerbar aún más la discapacidad visual y el deterioro cognitivo en los pacientes con Alzheimer, lo que requiere estrategias integrales de atención y manejo de los ojos."
+    - text: "Los cambios en la visión pueden afectar la vida diaria de los pacientes con Alzheimer al afectar su capacidad para realizar tareas como leer, conducir, cocinar y navegar de manera segura en su entorno. Las discapacidades visuales pueden contribuir a la desorientación, caídas, accidentes y dificultad para reconocer rostros y entornos familiares, lo que lleva a una mayor dependencia de los cuidadoresy una disminución de la calidad de vida de las personas con enfermedad de Alzheimer."
+    - text: "La detección temprana y el tratamiento de los problemas oculares son esenciales en los pacientes con Alzheimer para prevenir un mayor deterioro de la visión, optimizar la función visual y mejorar la calidad de vida. Los exámenes oculares periódicos, los exámenes de la vista y las evaluaciones integrales realizados por profesionales de la visión pueden ayudar a identificar y abordar afecciones oculares subyacentes, monitorear los cambios en la agudeza visual y la salud ocular y proporcionar intervenciones como lentes correctivos, ayudas para la baja visión y servicios de rehabilitación visual para apoyar personas con Alzheimer a mantener la independencia y la autonomía."
+    - text: "Sí, existen estrategias para abordar los desafíos relacionados con la visión en los pacientes con Alzheimer, incluidas modificaciones ambientales, tecnologías adaptativas y apoyo de los cuidadores. Los ejemplos incluyen mejorar las condiciones de iluminación, minimizar el brillo y las sombras, usar materiales de alto contraste y fuentes de letra grande, organizar los espacios habitables para reducir el desorden y los obstáculos y brindar asistencia con las actividades de la vida diaria como vestirse, arreglarse y preparar las comidas. Además, los cuidadores pueden promover la salud ocular mediante una nutrición, hidratación, ejercicio regular y administración de medicamentos adecuados para respaldar el bienestar general y la función cognitiva en personas con enfermedad de Alzheimer."
+    - text: "Sí, las alteraciones visuales en los pacientes con Alzheimer pueden empeorar con el tiempo a medida que la enfermedad avanza y los cambios neurodegenerativos en el cerebro afectan el procesamiento visual, la percepción y la función ocular. Los individuos pueden experimentar disminuciones graduales en la agudeza visual, la sensibilidad al contraste, la percepción del color y la percepción de la profundidad lo que lleva a mayores dificultades con las actividades que requieren atención y discriminación visual. Los cuidadores deben monitorear los cambios en la visión y buscar una evaluación e intervención inmediata de los profesionales de la visión para abordar las discapacidades visuales emergentes y optimizar los resultados funcionales de los pacientes con Alzheimer."
+
+  utter_neuronas: 
+    - text: "Las neuronas constan de un cuerpo celular, dendritas y un axón."
+    - text: "Las neuronas se comunican a través de señales eléctricas y químicas a través de sinapsis."
+    - text: "Las dendritas recogen información de otras neuronas y la transmiten al cuerpo celular."
+    - text: "El axón transmite señales desde el cuerpo celular a otras neuronas."
+    - text: "El Alzheimer altera la comunicación neuronal provocando la pérdida de conexiones sinápticas."
+    - text: "La remodelación sináptica se refiere al ajuste de las conexiones sinápticas en función de la actividad neuronal. Es importante para el aprendizaje y la memoria."
+    - text: "Las neuronas se comunican a través de señales eléctricas y químicas. El Alzheimer altera las conexiones sinápticas y afecta la comunicación."
+    - text: "Las placas amiloides son grupos de proteínas anormales que alteran la función celular en el Alzheimer."
+    - text: "Los ovillos neurofibrilares son acumulaciones anormales de proteína tau que alteran la función neuronal en el Alzheimer."
+    - text: "Las neuronas constan de un cuerpo celular, dendritas y un axón, que son esenciales para transmitir señales dentro del cerebro."
+    - text: "El cuerpo celular contiene el núcleo, que alberga información genética y regula las actividades de la neurona."
+    - text: "Las dendritas reciben señales de otras neuronas y las transmiten al cuerpo celular para su procesamiento."
+    - text: "El axón transmite señales eléctricas desde el cuerpo celular a otras neuronas o células del cuerpo."
+    - text: " La comunicación sináptica implica la liberación de neurotransmisores a través de las sinapsis, lo que permite la comunicación entre neuronas. Es vital para la función cerebral."
+
+  utter_condiciones_legales:
+    - text: "Sí, las consideraciones legales incluyen establecer un poder notarial, crear directivas anticipadas y planificar las necesidades de atención a largo plazo para garantizar la protección y la autoridad para tomar decisiones."
+    - text: "Es importante asegurarse de que los documentos legales, como testamentos y poderes duraderos, estén actualizados y reflejen los deseos del paciente con Alzheimer antes de que la enfermedad avance."
+    - text: "La planificación legal debe incluir la designación de un tutor legal o curador que pueda tomar decisiones financieras y médicas en nombre del paciente cuando ya no pueda hacerlo por sí mismo."
+    - text: "Consultar con un abogado especializado en derecho de ancianos puede proporcionar orientación sobre cómo proteger los activos del paciente y asegurarse de que se cumplan sus deseos de atención a largo plazo."
+    - text: "Crear un fideicomiso en vida puede ser una estrategia efectiva para gestionar los activos del paciente con Alzheimer y proporcionar los recursos necesarios para su atención continua."
+    - text: "Las directivas anticipadas de atención médica permiten al paciente con Alzheimer expresar sus deseos sobre tratamientos médicos y cuidados paliativos antes de que la enfermedad avance y afecte su capacidad de comunicación."
+    - text: "Es esencial considerar la planificación de la sucesión y la protección de los bienes del paciente para evitar disputas familiares y asegurar que los recursos se utilicen según sus deseos."
+    - text: "La inclusión de directivas de atención a largo plazo en los planes legales puede ayudar a garantizar que el paciente con Alzheimer reciba el tipo de cuidado y entorno que prefiere en las etapas avanzadas de la enfermedad."
+    - text: "Asegurarse de que los seguros de salud y de atención a largo plazo estén en orden puede proporcionar una red de seguridad financiera para el paciente y su familia."
+    - text: "Establecer un acuerdo de cuidados compartidos puede facilitar la colaboración entre familiares y cuidadores profesionales, asegurando que las necesidades del paciente con Alzheimer estén cubiertas de manera integral."
+
+  utter_deambulacion_consejo:
+    - text: "La implementación de medidas de seguridad como alarmas en las puertas, pulseras de identificación y dispositivos de rastreo GPS puede ayudar a prevenir la deambulación y garantizar la seguridad del paciente."
+    - text: "Es útil crear un entorno seguro y familiar para el paciente con Alzheimer, eliminando objetos peligrosos y proporcionando señales visuales claras para reducir la confusión y el riesgo de deambulación."
+    - text: "El establecimiento de rutinas diarias estructuradas y la participación en actividades significativas pueden ayudar a reducir la inquietud y la necesidad de deambular en los pacientes con Alzheimer."
+    - text: "Instalar cerraduras a prueba de niños en las puertas exteriores y ventanas puede ser una medida efectiva para prevenir que el paciente salga del hogar sin supervisión."
+    - text: "Asegurarse de que el paciente tenga acceso a áreas seguras y controladas donde pueda moverse libremente puede ayudar a satisfacer su necesidad de actividad física sin riesgos."
+    - text: "Mantener una iluminación adecuada y eliminar los peligros de tropiezos en el hogar puede reducir el riesgo de caídas y accidentes relacionados con la deambulación."
+    - text: "La creación de un jardín seguro o un patio cercado puede proporcionar un espacio donde el paciente pueda pasear de manera segura y controlada."
+    - text: "Informar a los vecinos y amigos sobre la posibilidad de deambulación del paciente y proporcionarles información de contacto puede ser crucial en caso de que el paciente se pierda."
+    - text: "La terapia ocupacional puede ofrecer estrategias para manejar la inquietud y proporcionar actividades que mantengan al paciente ocupado y menos propenso a deambular."
+    - text: "El uso de cámaras de seguridad o sistemas de monitoreo en el hogar puede ayudar a los cuidadores a vigilar al paciente y actuar rápidamente si comienza a deambular."
+
   utter_apoyo_emocional:
     - text: "¿Cómo te sientes hoy? Estoy aquí para escucharte y apoyarte en todo lo que necesites."
     - text: "¿En qué puedo ayudarte en este momento? Estoy aquí para ofrecerte mi apoyo."
@@ -617,6 +820,10 @@ utter_consejo:
     - text: "Si estás sintiéndote abrumado, intenta practicar la atención plena o mindfulness. Enfocarte en el presente puede reducir el estrés."
     - text: "Recuerda mantener una alimentación saludable para apoyar tu bienestar mental y físico."
 
+
+
+
+  
 
 session_config:
   session_expiration_time: 60

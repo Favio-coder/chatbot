@@ -278,3 +278,102 @@ rules:
       - intent: bien
       - action: utter_bien
 
+  - rule: Hablar de terapia grupal 
+    steps: 
+      - intent: terapia_grupal
+      - action: utter_terapia_grupal 
+
+  - rule: Hablar de psicoterapia
+    steps:
+      - intent: psicoterapia
+      - action: utter_psicoterapia
+
+  - rule: Habla de limitaciones de psicoterapia 
+    steps: 
+      - intent: psicoterapia_limitaciones
+      - action: utter_psicoterapia_limitaciones
+  
+  - rule: Hablar de presión arterial 
+    steps:
+      - intent: presion_arterial 
+      - action: utter_presion_arterial 
+  
+  - rule: Hablar de presión arterial y fluctuaciones 
+    steps: 
+      - intent: presion_arterial_fluctuaciones
+      - action: utter_presion_arterial_fluctuaciones 
+  
+  - rule: Hablar de hipertensión de Alzheimer 
+    steps: 
+      - intent: hipertension_alzheimer
+      - action: utter_hipertension_alzheimer
+
+  - rule: Hablar de medicamentos de Alzheimer 
+    steps: 
+      - intent: medicamento_alzheimer
+      - action: utter_medicamento_alzheimer
+  
+  - rule: Hablar de estilo de vida sobre el Alzheimer 
+    steps: 
+      - intent: estilo_vida_alzheimer
+      - action: utter_estilo_vida_alzheimer
+
+  - rule: Hablar de estres y ansiedad en el Alzheimer 
+    steps: 
+      - intent: estres_ansiedad_presion
+      - action: utter_estres_ansiedad_presion
+
+  - rule: Hablar de transtornos de sueño en el Alzheimer 
+    steps: 
+      - intent: transtornos_sueno
+      - action: utter_transtornos_sueno
+  
+  - rule: Hablar de genetica del Alzheimer 
+    steps: 
+      - intent: genetica_alzheimer 
+      - action: utter_genetica_alzheimer
+
+  - rule: Hablar sobre el estres y ansiedad en el  Alzheimer 
+    steps: 
+      - intent: estres_ansiedad_presion
+      - action: utter_estres_ansiedad_presion
+  
+  - rule: Hablar sobre como aumenta los accidentes
+    steps: 
+      - intent: aumentar_accidente
+      - action: utter_aumentar_accidente
+
+  - rule: Hablar sobre los accidentes de Alzheimer
+    steps: 
+      - intent: accidentes_alzheimer
+      - action: utter_accidentes_alzheimer
+  
+  - rule: Hablar sobre como prevenir accidentes
+    steps: 
+      - intent: prevenir_accidentes
+      - action: utter_prevenir_accidentes
+
+  - rule: Hablar sobre la relación del Alzheimer y la vision 
+    steps: 
+      - intent: visual_alzheimer 
+      - action: utter_visual_alzheimer 
+  
+  - rule: Hablar sobre las neuronas 
+    steps: 
+      - intent: neuronas
+      - action: utter_neuronas
+  
+  - rule: Hablar sobre las condiciones legales en el Alzheimer 
+    steps: 
+      - intent: condiciones_legales 
+      - action: utter_condiciones_legales 
+
+  - rule: Hablar sobre la deambulación 
+    steps: 
+      - intent: deambulacion_consejo 
+      - action: utter_deambulacion_consejo 
+
+  - rule: familiar tiene alzheimer 
+    steps: 
+      - intent: familiar_alzheimer
+      - action: utter_familiar_alzheimer 

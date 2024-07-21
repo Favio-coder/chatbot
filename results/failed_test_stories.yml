@@ -1,0 +1,109 @@
+version: "3.1"
+stories:
+- story: Expresión de estrés y saludo (.\chatbot\tests\test_stories.yml)
+  steps:
+  - intent: estres
+  - action: utter_estres
+  - intent: saludo
+  - action: utter_saludo_v2  # predicted: utter_saludo
+- story: Saludo y despedida (.\chatbot\tests\test_stories.yml)
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2  # predicted: utter_saludo
+  - intent: despedida
+  - action: utter_despedida
+- story: Saludo y solicitud de consejo (.\chatbot\tests\test_stories.yml)
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2  # predicted: utter_saludo
+  - intent: consejo
+  - action: utter_consejo
+- story: Saludo y petición de ayuda (.\chatbot\tests\test_stories.yml)
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2  # predicted: utter_saludo
+  - intent: ayuda
+  - action: utter_ayuda
+- story: Saludo y expresión de gratitud (.\chatbot\tests\test_stories.yml)
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2  # predicted: utter_saludo
+  - intent: gratitud
+  - action: utter_gratitud
+- story: happy path 1 (.\.venv\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: emocion: hello there!
+  - action: utter_greet  # predicted: action_default_fallback
+  - intent: mood_great  # predicted: default: amazing
+  - action: utter_happy  # predicted: action_default_fallback
+- story: Saludo y pregunta sobre el estrés (.\chatbot\tests\test_stories.yml)
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2  # predicted: utter_saludo
+  - intent: que_tal
+  - action: utter_que_tal
+  - intent: estres
+  - action: utter_estres
+- story: Saludo y expresión de estrés (.\chatbot\tests\test_stories.yml)
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2  # predicted: utter_saludo
+  - intent: estres
+  - action: utter_estres
+  - intent: agradecimiento
+  - action: utter_agradecimiento
+- story: happy path 2 (.\.venv\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: emocion: hello there!
+  - action: utter_greet  # predicted: action_default_fallback
+  - intent: mood_great  # predicted: default: amazing
+  - action: utter_happy  # predicted: action_default_fallback
+  - intent: goodbye  # predicted: bien: bye-bye!
+  - action: utter_goodbye  # predicted: action_default_fallback
+- story: sad path 1 (.\.venv\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: atencion_plena: hello
+  - action: utter_greet  # predicted: action_default_fallback
+  - intent: mood_unhappy  # predicted: default: not good
+  - action: utter_cheer_up  # predicted: action_default_fallback
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: affirm  # predicted: default: yes
+  - action: utter_happy  # predicted: action_default_fallback
+- story: sad path 2 (.\.venv\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: atencion_plena: hello
+  - action: utter_greet  # predicted: action_default_fallback
+  - intent: mood_unhappy  # predicted: default: not good
+  - action: utter_cheer_up  # predicted: action_default_fallback
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny  # predicted: default: not really
+  - action: utter_goodbye  # predicted: action_default_fallback
+- story: sad path 3 (.\.venv\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: consejo_salud_mental: hi
+  - action: utter_greet  # predicted: action_default_fallback
+  - intent: mood_unhappy  # predicted: mal: very terrible
+  - action: utter_cheer_up  # predicted: action_default_fallback
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny  # predicted: depresion: no
+  - action: utter_goodbye  # predicted: action_default_fallback
+- story: say goodbye (.\.venv\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: goodbye  # predicted: bien: bye-bye!
+  - action: utter_goodbye  # predicted: action_default_fallback
+- story: bot challenge (.\.venv\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: bot_challenge  # predicted: default: are you a bot?
+  - action: utter_iamabot  # predicted: action_default_fallback
+- story: Saludo y pregunta sobre el estado (.\chatbot\tests\test_stories.yml)
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2  # predicted: utter_saludo
+  - intent: que_tal
+  - action: utter_que_tal
+- story: Saludo y expresión de estrés (.\chatbot\tests\test_stories.yml)
+  steps:
+  - intent: saludo
+  - action: utter_saludo_v2  # predicted: utter_saludo
+  - intent: estres
+  - action: utter_estres

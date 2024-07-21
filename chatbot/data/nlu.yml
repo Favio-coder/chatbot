@@ -655,5 +655,259 @@ nlu:
     - Estoy buscando algo, pero no estoy seguro/a de qué
     - Tengo una duda, pero no sé exactamente cuál es
 
+- intent: terapia_grupal
+  examples: |
+    - ¿Existen opciones de terapia grupal disponibles para pacientes con Alzheimer?
+    - ¿Qué es la terapia grupal para pacientes con Alzheimer?
+    - ¿Cómo puede la terapia grupal beneficiar a los pacientes con Alzheimer?
+    - ¿Qué tipos de terapia grupal se recomiendan para personas con Alzheimer?
+    - ¿Dónde puedo encontrar grupos de terapia para pacientes con Alzheimer?
+    - ¿La terapia grupal puede ayudar a reducir la sensación de aislamiento en pacientes con Alzheimer?
+
+- intent: psicoterapia
+  examples: |
+    - ¿Puede la psicoterapia ayudar a los pacientes de Alzheimer a afrontar los cambios en la identidad y el autoconcepto?
+    - ¿Cómo puede la psicoterapia abordar la culpa y la culpa del cuidador?
+    - ¿Cómo aborda la psicoterapia la dinámica cuidador-paciente y los desafíos de la relación?
+    - ¿Qué tipos de psicoterapia se utilizan habitualmente en el cuidado del Alzheimer?
+    - ¿Cómo ayuda la psicoterapia a los cuidadores de pacientes con Alzheimer?
+    - ¿Puede la psicoterapia ayudar a los pacientes de Alzheimer a afrontar la pérdida de memoria?
+    - ¿Qué beneficios ofrece la psicoterapia a los pacientes con Alzheimer en cuanto a la gestión del estrés?
+    - ¿La psicoterapia puede mejorar la calidad de vida de los pacientes con Alzheimer?
+    - ¿Cómo se adapta la psicoterapia a las necesidades cambiantes de los pacientes con Alzheimer?
+
+- intent: psicoterapia_limitaciones
+  examples: |
+    - ¿Es eficaz la psicoterapia para tratar los síntomas del Alzheimer?
+    - ¿Es la psicoterapia apropiada para todas las etapas de la enfermedad de Alzheimer?
+    - ¿Qué limitaciones tiene la psicoterapia en el tratamiento de pacientes con Alzheimer avanzado?
+    - ¿Existen casos en los que la psicoterapia no sea recomendada para pacientes con Alzheimer?
+    - ¿Cómo se aborda la falta de comprensión en pacientes con Alzheimer durante la psicoterapia?
+    - ¿Cuándo es necesario considerar alternativas a la psicoterapia para pacientes con Alzheimer?
+
+
+- intent: presion_arterial 
+  examples: |
+    - ¿Cuál es la relación entre la enfermedad de Alzheimer y la presión arterial?
+    - ¿Cómo afecta la presión arterial alta al cerebro y aumenta el riesgo de Alzheimer?
+    - ¿Puede la presión arterial alta ser un factor que contribuya a la demencia vascular, que comparte similitudes con el Alzheimer?
+    - ¿Se recomiendan objetivos específicos de presión arterial para reducir el riesgo de enfermedad de Alzheimer?
+    - ¿Controlar la presión arterial puede ayudar a prevenir o retrasar la aparición de la enfermedad de Alzheimer?
+    - ¿Cómo afecta el control de la presión arterial a la progresión de la enfermedad de Alzheimer en pacientes ya diagnosticados con la enfermedad?
+
+- intent: presion_arterial_fluctuaciones
+  examples: |
+    - ¿Pueden las fluctuaciones de la presión arterial afectar la función cognitiva en personas con riesgo de padecer la enfermedad de Alzheimer?
+    - ¿Cuál es la relación de las fluctuaciones con el Alzheimer y enfermedades cognitivas?
+    - ¿Cómo afectan las variaciones de presión arterial al cerebro de una persona con Alzheimer?
+    - ¿Qué impacto tienen los picos y caídas en la presión arterial sobre la progresión del Alzheimer?
+    - ¿Las fluctuaciones en la presión arterial están relacionadas con episodios de confusión en personas con Alzheimer?
+    - ¿Cómo puede la estabilidad en la presión arterial influir en la salud cognitiva?
+    - ¿Qué efectos tienen las fluctuaciones de presión arterial en la memoria a largo plazo?
+    - ¿Cómo se pueden controlar las fluctuaciones de presión arterial para proteger la función cognitiva?
+    - ¿Existen estudios que vinculen la variabilidad de la presión arterial con el riesgo de desarrollar Alzheimer?
+
+- intent: hipertension_alzheimer
+  examples: |
+    - ¿Cómo contribuye la hipertensión al desarrollo de cambios cerebrales relacionados con el Alzheimer?
+    - ¿Qué relación existe entre la hipertensión y la progresión del Alzheimer?
+    - ¿La hipertensión puede acelerar la aparición de síntomas de Alzheimer?
+    - ¿Cómo afecta la presión arterial alta a la salud cerebral y al riesgo de Alzheimer?
+    - ¿Qué mecanismos biológicos están implicados en la relación entre hipertensión y Alzheimer?
+    - ¿Puede la hipertensión crónica causar daño a los vasos sanguíneos cerebrales relacionados con el Alzheimer?
+    - ¿Cómo influyen los cambios en la presión arterial en la aparición de síntomas de Alzheimer?
+    - ¿Qué papel juega la hipertensión en el desarrollo de la enfermedad de Alzheimer en edad avanzada?
+    - ¿La hipertensión es un factor de riesgo modificable para prevenir el Alzheimer?
+
+- intent: medicamento_alzheimer
+  examples: |
+    - ¿Existen medicamentos específicos para la presión arterial que puedan ofrecer beneficios neuroprotectores contra la enfermedad de Alzheimer?
+    - ¿Qué papel juegan los medicamentos antihipertensivos en la salud cerebral de los pacientes con Alzheimer?
+    - ¿Cómo pueden los medicamentos para la presión arterial ayudar a prevenir el deterioro cognitivo asociado con Alzheimer?
+    - ¿Qué evidencia hay sobre la eficacia de los medicamentos para la presión arterial en la reducción del riesgo de Alzheimer?
+    - ¿Los medicamentos antihipertensivos tienen efectos secundarios que podrían influir en la función cognitiva?
+    - ¿Qué tipo de medicamentos para la presión arterial se investigan para su potencial en la prevención del Alzheimer?
+    - ¿Cómo pueden los tratamientos para la hipertensión influir en la progresión de la enfermedad de Alzheimer?
+    - ¿Qué estudios clínicos han mostrado beneficios neuroprotectores de los medicamentos antihipertensivos?
+    - ¿Es recomendable ajustar la medicación para la presión arterial en pacientes con Alzheimer?
+
+- intent: estilo_vida_alzheimer
+  examples: |
+    - ¿Qué cambios en el estilo de vida pueden ayudar a prevenir el Alzheimer?
+    - ¿Cómo puede un estilo de vida saludable influir en el riesgo de Alzheimer?
+    - ¿Qué papel juegan la dieta y el ejercicio en la prevención del Alzheimer?
+    - ¿Cómo afecta un estilo de vida sedentario al riesgo de desarrollar Alzheimer?
+    - ¿Qué hábitos saludables se recomiendan para reducir el riesgo de Alzheimer?
+    - ¿Cómo influye la reducción del estrés en la prevención de la enfermedad de Alzheimer?
+    - ¿Qué impacto tiene una dieta equilibrada en la salud cerebral y el riesgo de Alzheimer?
+    - ¿Cómo puede la socialización y las actividades mentales contribuir a la prevención del Alzheimer?
+    - ¿Qué cambios en el estilo de vida se han demostrado efectivos en estudios para prevenir el Alzheimer?
+
+- intent: estres_ansiedad_presion
+  examples: |
+    - ¿Pueden el estrés y la ansiedad relacionados con la presión arterial alta contribuir al deterioro cognitivo y la enfermedad de Alzheimer?
+    - ¿Cómo puede el estrés afectar la presión arterial y la salud cerebral?
+    - ¿Qué estrategias se pueden usar para manejar el estrés en personas con hipertensión?
+    - ¿Qué relación existe entre el estrés crónico y el desarrollo de Alzheimer?
+    - ¿Cómo influyen las emociones negativas en la presión arterial y en el riesgo de Alzheimer?
+    - ¿Cómo puede el manejo del estrés mejorar la salud cognitiva en personas con presión arterial alta?
+    - ¿Qué técnicas de relajación son recomendables para reducir el impacto del estrés en la presión arterial?
+    - ¿El estrés prolongado tiene efectos específicos en la progresión de la enfermedad de Alzheimer?
+    - ¿Qué papel juegan los programas de reducción de estrés en la prevención del Alzheimer?
+
+- intent: transtornos_sueno
+  examples: |
+    - ¿Cómo afectan la calidad del sueño y los trastornos del sueño a la regulación de la presión arterial y al riesgo de Alzheimer?
+    - ¿Qué relación existe entre los trastornos del sueño y el desarrollo de Alzheimer?
+    - ¿Cómo se puede mejorar la calidad del sueño en pacientes con Alzheimer?
+    - ¿Qué impacto tiene la apnea del sueño en la salud cerebral y la presión arterial?
+    - ¿Cómo influyen el insomnio y otros trastornos del sueño en el riesgo de desarrollar Alzheimer?
+    - ¿Qué estrategias son efectivas para tratar los trastornos del sueño en personas con Alzheimer?
+    - ¿Cómo puede la calidad del sueño afectar la progresión de la enfermedad de Alzheimer?
+    - ¿Qué medidas se pueden tomar para promover un sueño reparador en pacientes con Alzheimer?
+    - ¿Qué relación existe entre la falta de sueño y el deterioro cognitivo en el Alzheimer?
+
+- intent: genetica_alzheimer
+  examples: |
+    - ¿Existe un componente genético en la relación entre la presión arterial y la enfermedad de Alzheimer?
+    - ¿Cómo influye la genética en el riesgo de Alzheimer relacionado con la hipertensión?
+    - ¿Qué genes están asociados con la hipertensión y el Alzheimer?
+    - ¿Cómo pueden las variaciones genéticas afectar la presión arterial y el riesgo de Alzheimer?
+    - ¿Qué papel juegan los genes en la predisposición a la hipertensión y al Alzheimer?
+    - ¿Cómo interactúan los factores genéticos y ambientales en el riesgo de desarrollar Alzheimer?
+    - ¿Qué investigaciones recientes han mostrado sobre la genética y el Alzheimer?
+    - ¿Qué impacto tienen las variantes genéticas en la relación entre la presión arterial y la enfermedad de Alzheimer?
+    - ¿Cómo pueden los estudios genéticos ayudar a identificar riesgos para el Alzheimer asociado con la hipertensión?
+
+
+
+
+- intent: accidentes_alzheimer
+  examples: |
+    - ¿Cómo afecta la enfermedad de Alzheimer a la función cognitiva y aumenta el riesgo de accidentes?
+    - ¿Qué medidas se pueden tomar para reducir el riesgo de accidentes en pacientes con Alzheimer?
+    - ¿Qué precauciones debo tener para evitar accidentes en mi familiar con Alzheimer?
+    - ¿Cuáles son los accidentes más comunes en personas con Alzheimer?
+    - ¿Qué puedo hacer para prevenir caídas en mi familiar con Alzheimer?
+    - ¿Cómo puedo adaptar mi hogar para que sea más seguro para un paciente con Alzheimer?
+    - ¿Es necesario supervisar constantemente a un paciente con Alzheimer para evitar accidentes?
+    - ¿Qué dispositivos de seguridad son recomendables para pacientes con Alzheimer?
+    - ¿Cómo afecta la pérdida de memoria al riesgo de accidentes en personas con Alzheimer?
+    - ¿Qué cambios en el comportamiento de mi familiar con Alzheimer pueden indicar un mayor riesgo de accidentes?
+    - ¿Cómo puedo asegurarme de que mi familiar con Alzheimer esté seguro cuando estoy fuera de casa?
+    - ¿Qué tipo de actividades son seguras para una persona con Alzheimer?
+    - ¿Qué hacer en caso de que mi familiar con Alzheimer sufra un accidente en casa?
+    - ¿Cómo afecta el Alzheimer a la capacidad de mi familiar para realizar tareas cotidianas de manera segura?
+    - ¿Qué consejos pueden ayudar a evitar accidentes en el hogar de un paciente con Alzheimer?
+    - ¿Qué recursos están disponibles para ayudar a cuidar de un paciente con Alzheimer y prevenir accidentes?
+
+
+- intent: prevenir_accidentes
+  examples: |
+    - ¿Cómo puedo prevenir accidentes de pacientes con Alzheimer?
+    - ¿Qué estrategias son efectivas para prevenir accidentes en el hogar?
+    - ¿Cuáles son las mejores prácticas para asegurar un entorno seguro para pacientes con Alzheimer?
+    - ¿Qué medidas de seguridad debo implementar para evitar caídas en mi familiar con Alzheimer?
+    - ¿Cómo puedo adaptar el entorno para minimizar los riesgos de accidentes para alguien con Alzheimer?
+    - ¿Cómo puedo entrenar a los cuidadores para prevenir accidentes en pacientes con Alzheimer?
+    - ¿Qué cambios en la rutina diaria pueden reducir el riesgo de accidentes en personas con Alzheimer?
+
+- intent: aumentar_accidente
+  examples: |
+    - ¿Cuál es la relación entre la enfermedad de Alzheimer y la probabilidad de sufrir un accidente?
+    - ¿Qué factores aumentan el riesgo de accidentes en pacientes con Alzheimer?
+    - ¿Cómo afecta el Alzheimer la capacidad de una persona para evitar accidentes?
+    - ¿Por qué las personas con Alzheimer son más propensas a sufrir caídas y lesiones?
+    - ¿Cómo influyen los cambios en la memoria y el juicio en el riesgo de accidentes en pacientes con Alzheimer?
+    - ¿Qué papel juega el deterioro de la percepción espacial en los accidentes de personas con Alzheimer?
+    - ¿Cómo el avance de la enfermedad de Alzheimer incrementa el riesgo de accidentes en el hogar?
+    - ¿Qué aspectos del comportamiento de un paciente con Alzheimer pueden aumentar el riesgo de accidentes?
+
+- intent: accidentes_alzheimer
+  examples: |
+    - ¿Cómo afecta la enfermedad de Alzheimer a la función cognitiva y aumenta el riesgo de accidentes?
+    - ¿Qué medidas se pueden tomar para reducir el riesgo de accidentes en pacientes con Alzheimer?
+    - ¿Qué precauciones debo tener para evitar accidentes en mi familiar con Alzheimer?
+    - ¿Cuáles son los tipos más comunes de accidentes que enfrentan las personas con Alzheimer?
+    - ¿Cómo pueden los problemas de coordinación y equilibrio en Alzheimer aumentar el riesgo de caídas?
+    - ¿Qué estrategias son útiles para prevenir accidentes en pacientes con Alzheimer que deambulan?
+    - ¿Cómo el deterioro cognitivo asociado con Alzheimer contribuye a accidentes en el hogar?
+    - ¿Qué recomendaciones de seguridad deben seguirse para proteger a un paciente con Alzheimer de accidentes graves?
+
+- intent: visual_alzheimer 
+  examples: |
+    - ¿Cuál es la relación entre la enfermedad de Alzheimer y los problemas oculares?
+    - ¿Cómo afecta la enfermedad de Alzheimer a la visión y la salud ocular?
+    - ¿Existen afecciones oculares específicas asociadas con la enfermedad de Alzheimer?
+    - ¿Cómo pueden los cambios en la visión afectar la vida diaria de los pacientes con Alzheimer?
+    - ¿Qué papel juega la detección precoz y el tratamiento de los problemas oculares en los pacientes con Alzheimer?
+    - ¿Existen estrategias para abordar los desafíos relacionados con la visión en los pacientes con Alzheimer?
+    - ¿Pueden las alteraciones visuales en pacientes con Alzheimer empeorar con el tiempo?
+    - ¿Cómo pueden los cuidadores apoyar a las personas con enfermedad de Alzheimer que presentan problemas de visión?
+    - ¿Cuáles son los problemas oculares comunes asociados con la enfermedad de Alzheimer?
+    - ¿Cómo afecta la enfermedad de Alzheimer a la visión?
+    - ¿Existen afecciones oculares específicas que los pacientes con Alzheimer son más propensos a desarrollar?
+    - ¿Puede la enfermedad de Alzheimer provocar cambios en la percepción visual?
+    - ¿Cómo afectan los problemas de visión a la vida diaria de los pacientes con Alzheimer?
+    - ¿Existe una correlación entre la enfermedad de Alzheimer y un mayor riesgo de caídas debido a problemas de visión?
+    - ¿Puede la enfermedad de Alzheimer provocar cambios en los movimientos oculares?
+    - ¿Cómo pueden los cuidadores ayudar a los pacientes de Alzheimer con problemas de visión?
+    - ¿Existen tratamientos específicos disponibles para los problemas de visión en pacientes con Alzheimer?
+    - ¿Pueden los problemas de visión en pacientes con Alzheimer empeorar con el tiempo? 
+
+- intent: neuronas
+  examples: |
+    - ¿Cuáles son los componentes básicos de las neuronas?
+    - ¿Cómo se comunican las neuronas entre sí?
+    - ¿Cuál es el papel de las dendritas en las neuronas?
+    - ¿Cuál es la función del axón?
+    - ¿Cómo afecta la enfermedad de Alzheimer a la comunicación neuronal?
+    - ¿Qué es el metabolismo y por qué es importante para las neuronas?
+    - ¿Cómo afecta la enfermedad de Alzheimer al metabolismo neuronal?
+    - ¿Qué es la remodelación sináptica y por qué es importante?
+    - ¿Cómo afecta la enfermedad de Alzheimer a la remodelación sináptica?
+    - ¿Qué son las células gliales y qué funciones desempeñan en el cerebro?
+    - ¿Cómo contribuye la microglía a la salud del cerebro?
+    - ¿Qué papel juegan los astrocitos en el cerebro?
+    - ¿Cómo contribuyen los oligodendrocitos a la función cerebral?
+    - ¿Cuál es la importancia de la neurogénesis en el cerebro adulto?
+    - ¿Cómo afecta la enfermedad de Alzheimer a la neurogénesis?
+    - ¿Qué son las placas amiloides y cómo contribuyen al Alzheimer?
+    - ¿Qué papel juegan los ovillos neurofibrilares en la patología del Alzheimer?
+
+- intent: condiciones_legales
+  examples: |
+    - ¿Existen consideraciones legales para los pacientes y cuidadores de Alzheimer?
+    - ¿Qué derechos legales tienen los pacientes con Alzheimer en mi país?
+    - ¿Cómo afecta la enfermedad de Alzheimer a la toma de decisiones legales?
+    - ¿Qué documentos legales son necesarios para el cuidado de pacientes con Alzheimer?
+    - ¿Existen leyes que protejan a los cuidadores de personas con Alzheimer?
+
+- intent: deambulacion_consejo
+  examples: | 
+    - ¿Cómo pueden los cuidadores abordar el comportamiento deambulatorio en pacientes con Alzheimer?
+    - ¿Qué estrategias son efectivas para prevenir la deambulación en pacientes con Alzheimer?
+    - ¿Cómo se puede garantizar la seguridad de los pacientes que tienden a deambular?
+    - ¿Qué herramientas o dispositivos pueden ayudar a controlar la deambulación?
+    - ¿Cuáles son las señales de alerta en el comportamiento deambulatorio?
+
+- intent: familiar_alzheimer
+  examples: |
+    - Mi abuelo tiene Alzheimer, ¿qué puedo hacer para ayudarlo?
+    - Mi familiar cercano tiene Alzheimer, ¿cómo puedo manejar la situación?
+    - ¿Cuáles son los mejores consejos para cuidar a un ser querido con Alzheimer?
+    - ¿Qué estrategias puedo utilizar para comunicarme eficazmente con alguien que tiene Alzheimer?
+    - ¿Cómo puedo adaptar el hogar para hacerlo más seguro para alguien con Alzheimer?
+    - Mi abuelo está perdiendo la memoria, ¿qué actividades podrían ayudarlo a mantenerse estimulado?
+    - ¿Qué recursos están disponibles para familiares de personas con Alzheimer?
+    - ¿Cómo puedo encontrar apoyo emocional para mí como cuidador de alguien con Alzheimer?
+    - ¿Qué debo hacer si mi familiar con Alzheimer tiene dificultades para reconocer a las personas?
+    - ¿Cómo puedo gestionar los cambios de comportamiento en mi ser querido con Alzheimer?
+    - ¿Qué tipo de asistencia profesional es necesaria para alguien con Alzheimer?
+    - ¿Cómo puedo ayudar a mi familiar con Alzheimer a mantener su independencia el mayor tiempo posible?
+    - ¿Qué medidas de seguridad debo tomar para prevenir accidentes en el hogar de mi ser querido con Alzheimer?
+    - ¿Cómo puedo manejar la frustración y el agotamiento como cuidador de alguien con Alzheimer?
+    - ¿Qué tipo de terapia puede beneficiar a un familiar con Alzheimer?
+    - ¿Cómo puede la familia apoyar a alguien con Alzheimer durante las etapas avanzadas de la enfermedad?
 
 
